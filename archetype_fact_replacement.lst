@@ -8,6 +8,12 @@ FACT:Inquisitor_CF_SecondJudgment|True
 FACT:Inquisitor_CF_GreaterBane|True
 FACT:Inquisitor_CF_ThirdJudgment|True
 
+FACT:Inquisitor_Archetype_MonsterLore|True
+FACT:Inquisitor_Archetype_DetectAlignment|True
+FACT:Inquisitor_Archetype_Bane|True
+FACT:Inquisitor_Archetype_SecondJudgment|True
+FACT:Inquisitor_Archetype_GreaterBane|True
+FACT:Inquisitor_Archetype_ThirdJudgment|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Inquisitor Archetype ~ Exarch],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Fighter Archetype ~ Foehammer.MOD
 FACT:Fighter_CF_ArmorTraining1|True
@@ -21,11 +27,12 @@ FACT:Fighter_CF_WeaponTraining4|True
 FACT:Fighter_CF_ArmorMastery|True
 FACT:Fighter_CF_WeaponMastery|True
 
+FACT:Fighter_Archetype_ArmorTraining|True
+FACT:Fighter_Archetype_WeaponTraining|True
+FACT:Fighter_Archetype_ArmorMastery|True
+FACT:Fighter_Archetype_WeaponMastery|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Fighter Archetype ~ Foehammer],[!PREFACT:1,ABILITIES,]
-CATEGORY=Archetype|Cleric Archetype ~ Forgemaster.MOD
-FACT:Cleric_CF_ChannelEnergy|True
-
-PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Cleric Archetype ~ Forgemaster],[!PREFACT:1,ABILITIES,]
+CATEGORY=Archetype|Cleric Archetype ~ Forgemaster.MOD	FACT:Cleric_CF_ChannelEnergy|True		FACT:Cleric_Archetype_ChannelEnergy|True	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Cleric Archetype ~ Forgemaster],[!PREFACT:1,ABILITIES,Cleric_Archetype_ChannelEnergy=True]
 CATEGORY=Archetype|Paladin Archetype ~ Stonelord.MOD
 FACT:Paladin_CF_SmiteEvil|True
 FACT:Paladin_CF_DivineGrace|True
@@ -40,6 +47,14 @@ FACT:Paladin_CF_Mercy12|True
 FACT:Paladin_CF_Mercy18|True
 FACT:Paladin_CF_HolyChampion|True
 
+FACT:Paladin_Archetype_SmiteEvil|True
+FACT:Paladin_Archetype_DivineGrace|True
+FACT:Paladin_Archetype_DivineHealth|True
+FACT:Paladin_Archetype_Mercy|True
+FACT:Paladin_Archetype_ChannelPositiveEnergy|True
+FACT:Paladin_Archetype_DivineBond|True
+FACT:Paladin_Archetype_AuraOfJustice|True
+FACT:Paladin_Archetype_HolyChampion|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Paladin Archetype ~ Stonelord],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Oracle Archetype ~ Ancient Lorekeeper.MOD
 FACT:Oracle_CF_MysterySkills|True
@@ -53,6 +68,8 @@ FACT:Oracle_CF_MysterySpell14|True
 FACT:Oracle_CF_MysterySpell16|True
 FACT:Oracle_CF_MysterySpell18|True
 
+FACT:Oracle_Archetype_MysterySkills|True
+FACT:Oracle_Archetype_MysterySpell|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Oracle Archetype ~ Ancient Lorekeeper],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Magus Archetype ~ Spell Dancer.MOD
 FACT:Magus_CF_ArcanePool|True
@@ -60,16 +77,19 @@ FACT:Magus_CF_BonusFeat5|True
 FACT:Magus_CF_MediumArmor|True
 FACT:Magus_CF_HeavyArmor|True
 
+FACT:Magus_Archetype_ArcanePool|True
+FACT:Magus_Archetype_BonusFeat|True
+FACT:Magus_Archetype_Proficiency|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Magus Archetype ~ Spell Dancer],[!PREFACT:1,ABILITIES,]
-CATEGORY=Archetype|Wizard Archetype ~ Spellbinder.MOD
-FACT:Wizard_CF_ArcaneBond|True
-
-PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Wizard Archetype ~ Spellbinder],[!PREFACT:1,ABILITIES,]
+CATEGORY=Archetype|Wizard Archetype ~ Spellbinder.MOD	FACT:Wizard_CF_ArcaneBond|True	FACT:Wizard_Archetype_ArcaneBond|True	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Wizard Archetype ~ Spellbinder],[!PREFACT:1,ABILITIES,Wizard_Archetype_ArcaneBond=True]
 CATEGORY=Archetype|Druid Archetype ~ Treesinger.MOD
 FACT:Druid_CF_NatureBond|True
 FACT:Druid_CF_WildEmpathy|True
 FACT:Druid_CF_WildShape|True
 
+FACT:Druid_Archetype_NatureBond|True
+FACT:Druid_Archetype_WildEmpathy|True
+FACT:Druid_Archetype_WildShape|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Treesinger],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Gunslinger Archetype ~ Experimental Gunsmith.MOD
 FACT:Gunslinger_CF_FirearmTraining1|True
@@ -77,31 +97,28 @@ FACT:Gunslinger_CF_FirearmTraining2|True
 FACT:Gunslinger_CF_FirearmTraining3|True
 FACT:Gunslinger_CF_FirearmTraining4|True
 
-PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Gunslinger Archetype ~ Experimental Gunsmith],[!PREFACT:1,ABILITIES,]
+FACT:Gunslinger_Archetype_FirearmTraining|True
+PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Gunslinger Archetype ~ Experimental Gunsmith],[!PREFACT:1,ABILITIES,Gunslinger_Archetype_FirearmTraining=True]
 CATEGORY=Archetype|Bard Archetype ~ Prankster.MOD
 FACT:Bard_CF_Fascinate|True
 FACT:Bard_CF_Suggestion|True
 FACT:Bard_CF_MassSuggestion|True
 FACT:Bard_CF_LoreMaster|True
 
+FACT:Bard_Archetype_BardicPerformance|True
+FACT:Bard_Archetype_LoreMaster|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Bard Archetype ~ Prankster],[!PREFACT:1,ABILITIES,]
-CATEGORY=Archetype|Alchemist Archetype ~ Saboteur.MOD
-FACT:Alchemist_CF_Mutagen|True
-
-PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Alchemist Archetype ~ Saboteur],[!PREFACT:1,ABILITIES,]
-CATEGORY=Archetype|Witch Archetype ~ Bonded Witch.MOD
-FACT:Witch_CF_Familiar|True
-
-PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Witch Archetype ~ Bonded Witch],[!PREFACT:1,ABILITIES,]
-CATEGORY=Archetype|Alchemist Archetype ~ Bramble Brewer.MOD
-FACT:Alchemist_CF_Discovery|True
-
-PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Alchemist Archetype ~ Bramble Brewer],[!PREFACT:1,ABILITIES,]
+CATEGORY=Archetype|Alchemist Archetype ~ Saboteur.MOD	FACT:Alchemist_CF_Mutagen|True	FACT:Alchemist_Archetype_Mutagen|True	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Alchemist Archetype ~ Saboteur],[!PREFACT:1,ABILITIES,Alchemist_Archetype_Mutagen=True]
+CATEGORY=Archetype|Witch Archetype ~ Bonded Witch.MOD	FACT:Witch_CF_Familiar|True	FACT:Witch_Archetype_Familiar|True	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Witch Archetype ~ Bonded Witch],[!PREFACT:1,ABILITIES,Witch_Archetype_Familiar=True]
+CATEGORY=Archetype|Alchemist Archetype ~ Bramble Brewer.MOD	FACT:Alchemist_CF_Discovery|True	FACT:Alchemist_Archetype_Discovery|True	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Alchemist Archetype ~ Bramble Brewer],[!PREFACT:1,ABILITIES,Alchemist_Archetype_Discovery=True]
 CATEGORY=Archetype|Summoner Archetype ~ Wild Caller.MOD
 FACT:Summoner_CF_Eidolon|True
 FACT:Summoner_CF_SummonMonster|True
 FACT:Summoner_CF_SummonMonsterSpells|True
 
+FACT:Summoner_Archetype_Eidolon|True
+FACT:Summoner_Archetype_SummonMonster|True
+FACT:Summoner_Archetype_SummonMonsterSpells|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Summoner Archetype ~ Wild Caller],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Ranger Archetype ~ Wild Shadow.MOD
 FACT:Ranger_CF_Track|True
@@ -113,11 +130,16 @@ FACT:Ranger_CF_Quarry|True
 FACT:Ranger_CF_Camouflage|True
 FACT:Ranger_CF_ImprovedQuarry|True
 
+FACT:Ranger_Archetype_Track|True
+FACT:Ranger_Archetype_WildEmpathy|True
+FACT:Ranger_Archetype_FavoredTerrain|True
+FACT:Ranger_Archetype_HuntersBond|True
+FACT:Ranger_Archetype_WoodlandStride|True
+FACT:Ranger_Archetype_Quarry|True
+FACT:Ranger_Archetype_Camouflage|True
+FACT:Ranger_Archetype_ImprovedQuarry|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Ranger Archetype ~ Wild Shadow],[!PREFACT:1,ABILITIES,]
-CATEGORY=Archetype|Summoner Archetype ~ Blood God Disciple.MOD
-FACT:Summoner_CF_SummonMonster|True
-
-PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Summoner Archetype ~ Blood God Disciple],[!PREFACT:1,ABILITIES,]
+CATEGORY=Archetype|Summoner Archetype ~ Blood God Disciple.MOD	FACT:Summoner_CF_SummonMonster|True	FACT:Summoner_Archetype_SummonMonster|True	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Summoner Archetype ~ Blood God Disciple],[!PREFACT:1,ABILITIES,Summoner_Archetype_SummonMonster=True]
 CATEGORY=Archetype|Barbarian Archetype ~ Hateful Rager.MOD
 FACT:Barbarian_CF_RagePower2|True
 FACT:Barbarian_CF_RagePower8|True
@@ -126,6 +148,9 @@ FACT:Barbarian_CF_RagePower20|True
 FACT:Barbarian_CF_ImprovedUncannyDodge|True
 FACT:Barbarian_CF_TrapSense3|True
 
+FACT:Barbarian_Archetype_RagePower|True
+FACT:Barbarian_Archetype_ImprovedUncannyDodge|True
+FACT:Barbarian_Archetype_TrapSense|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Barbarian Archetype ~ Hateful Rager],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Paladin Archetype ~ Redeemer.MOD
 FACT:Paladin_CF_SmiteEvil|True
@@ -133,6 +158,10 @@ FACT:Paladin_CF_DetectEvil|True
 FACT:Paladin_CF_AuraOfResolve|True
 FACT:Paladin_CF_AuraOfJustice|True
 
+FACT:Paladin_Archetype_SmiteEvil|True
+FACT:Paladin_Archetype_DetectEvil|True
+FACT:Paladin_Archetype_AuraOfResolve|True
+FACT:Paladin_Archetype_AuraOfJustice|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Paladin Archetype ~ Redeemer],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Rogue Archetype ~ Skulking Slayer.MOD
 FACT:Rogue_CF_Trapfinding|True
@@ -141,6 +170,8 @@ FACT:Rogue_CF_TrapSense2|True
 FACT:Rogue_CF_TrapSense3|True
 FACT:Rogue_CF_TrapSense4|True
 
+FACT:Rogue_Archetype_Trapfinding|True
+FACT:Rogue_Archetype_TrapSense|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Rogue Archetype ~ Skulking Slayer],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Oracle Archetype ~ Community Guardian.MOD
 FACT:Oracle_CF_MysterySkills|True
@@ -150,6 +181,8 @@ FACT:Oracle_CF_MysterySpell6|True
 FACT:Oracle_CF_MysterySpell10|True
 FACT:Oracle_CF_MysterySpell12|True
 
+FACT:Oracle_Archetype_MysterySkills|True
+FACT:Oracle_Archetype_MysterySpell|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Oracle Archetype ~ Community Guardian],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Rogue Archetype ~ Filcher.MOD
 FACT:Rogue_CF_Evasion|True
@@ -157,6 +190,10 @@ FACT:Rogue_CF_TrapSense|True
 FACT:Rogue_CF_UncannyDodge|True
 FACT:Rogue_CF_ImprovedUncannyDodge|True
 
+FACT:Rogue_Archetype_Evasion|True
+FACT:Rogue_Archetype_TrapSense|True
+FACT:Rogue_Archetype_UncannyDodge|True
+FACT:Rogue_Archetype_ImprovedUncannyDodge|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Rogue Archetype ~ Filcher],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Monk Archetype ~ Underfoot Adept.MOD
 
@@ -164,6 +201,9 @@ FACT:Monk_CF_BonusFeat1|True
 FACT:Monk_CF_StunningFist|True
 FACT:Monk_CF_HighJump|True
 
+FACT:Monk_Archetype_BonusFeat|True
+FACT:Monk_Archetype_StunningFist|True
+FACT:Monk_Archetype_HighJump|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Monk Archetype ~ Underfoot Adept],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Gunslinger Archetype ~ Buccaneer.MOD
 FACT:Gunslinger_CF_QuickClearDeed|True
@@ -176,6 +216,13 @@ FACT:Gunslinger_CF_GunTraining1|True
 FACT:Gunslinger_CF_GunTraining2|True
 FACT:Gunslinger_CF_GunTraining4|True
 
+FACT:Gunslinger_Archetype_QuickClearDeed|True
+FACT:Gunslinger_Archetype_PistolWhipDeed|True
+FACT:Gunslinger_Archetype_DeadShotDeed|True
+FACT:Gunslinger_Archetype_LightningReloadDeed|True
+FACT:Gunslinger_Archetype_Grit|True
+FACT:Gunslinger_Archetype_Nimble|True
+FACT:Gunslinger_Archetype_GunTraining|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Gunslinger Archetype ~ Buccaneer],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Druid Archetype ~ Feral Child.MOD
 FACT:Druid_CF_TracklessStep|True
@@ -185,6 +232,12 @@ FACT:Druid_CF_ResistNaturesLure|True
 FACT:Druid_CF_VenomImmunity|True
 FACT:Druid_CF_TimelessBody|True
 
+FACT:Druid_Archetype_TracklessStep|True
+FACT:Druid_Archetype_ThousandFaces|True
+FACT:Druid_Archetype_WildShape|True
+FACT:Druid_Archetype_ResistNaturesLure|True
+FACT:Druid_Archetype_VenomImmunity|True
+FACT:Druid_Archetype_TimelessBody|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Feral Child],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Monk Archetype ~ Wanderer.MOD
 FACT:Monk_CF_BonusFeat1|True
@@ -195,12 +248,20 @@ FACT:Monk_CF_WholenessOfBody|True
 FACT:Monk_CF_AbundantStep|True
 FACT:Monk_CF_DiamondSoul|True
 
+FACT:Monk_Archetype_BonusFeat|True
+FACT:Monk_Archetype_StillMind|True
+FACT:Monk_Archetype_SlowFall|True
+FACT:Monk_Archetype_HighJump|True
+FACT:Monk_Archetype_WholenessOfBody|True
+FACT:Monk_Archetype_AbundantStep|True
+FACT:Monk_Archetype_DiamondSoul|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Monk Archetype ~ Wanderer],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Oracle Archetype ~ Purifier.MOD
 FACT:Oracle_CF_Revelation3|True
 FACT:Oracle_CF_Revelation7|True
 FACT:Oracle_CF_Revelation11|True
 
+FACT:Oracle_Archetype_Revelation|True
 CATEGORY=Archetype|Paladin Archetype ~ Tranquil Guardian.MOD
 FACT:Paladin_CF_SmiteEvil|True
 FACT:Paladin_CF_AuraOfCourage|True
@@ -208,10 +269,16 @@ FACT:Paladin_CF_AuraOfResolve|True
 FACT:Paladin_CF_AuraOfJustice|True
 FACT:Paladin_CF_HolyChampion|True
 
+FACT:Paladin_Archetype_SmiteEvil|True
+FACT:Paladin_Archetype_AuraOfCourage|True
+FACT:Paladin_Archetype_AuraOfResolve|True
+FACT:Paladin_Archetype_AuraOfJustice|True
+FACT:Paladin_Archetype_HolyChampion|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Paladin Archetype ~ Tranquil Guardian],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Rogue Archetype ~ Cat Burglar.MOD
 FACT:Rogue_CF_UncannyDodge|True
 
+FACT:Rogue_Archetype_UncannyDodge|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Rogue Archetype ~ Cat Burglar],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Monk Archetype ~ Nimble Guardian.MOD
 
@@ -221,6 +288,11 @@ FACT:Monk_CF_PurityOfBody|True
 FACT:Monk_CF_WholenessOfBody|True
 FACT:Monk_CF_ImprovedEvasion|True
 
+FACT:Monk_Archetype_Evasion|True
+FACT:Monk_Archetype_StillMind|True
+FACT:Monk_Archetype_PurityOfBody|True
+FACT:Monk_Archetype_WholenessOfBody|True
+FACT:Monk_Archetype_ImprovedEvasion|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Monk Archetype ~ Nimble Guardian],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Wizard Archetype ~ Cruoromancer.MOD
 FACT:Wizard_CF_ArcaneBond|True
@@ -229,11 +301,15 @@ FACT:Wizard_CF_BonusFeat10|True
 FACT:Wizard_CF_BonusFeat15|True
 FACT:Wizard_CF_BonusFeat20|True
 
+FACT:Wizard_Archetype_ArcaneBond|True
+FACT:Wizard_Archetype_BonusFeat|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Wizard Archetype ~ Cruoromancer],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Inquisitor Archetype ~ Kinslayer.MOD
 FACT:Inquisitor_CF_JudgmentDestruction|True
 FACT:Inquisitor_CF_DetectAlignment|True
 
+FACT:Inquisitor_Archetype_JudgmentDestruction|True
+FACT:Inquisitor_Archetype_DetectAlignment|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Inquisitor Archetype ~ Kinslayer],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Fighter Archetype ~ Cavern Sniper.MOD
 FACT:Fighter_CF_Bravery|True
@@ -243,6 +319,9 @@ FACT:Fighter_CF_WeaponTraining3|True
 FACT:Fighter_CF_WeaponTraining4|True
 FACT:Fighter_CF_WeaponMastery|True
 
+FACT:Fighter_Archetype_Bravery|True
+FACT:Fighter_Archetype_WeaponTraining|True
+FACT:Fighter_Archetype_WeaponMastery|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Fighter Archetype ~ Cavern Sniper],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Cleric Archetype ~ Demonic Apostle.MOD
 FACT:Cleric_CF_ChannelEnergy1|True
@@ -256,23 +335,28 @@ FACT:Cleric_CF_ChannelEnergy8|True
 FACT:Cleric_CF_ChannelEnergy9|True
 FACT:Cleric_CF_ChannelEnergy10|True
 
+FACT:Cleric_Archetype_ChannelEnergy|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Cleric Archetype ~ Demonic Apostle],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Ranger Archetype ~ Dusk Stalker.MOD
 FACT:Ranger_CF_FavoredTerrain|True
 FACT:Ranger_CF_HuntersBond|True
 FACT:Ranger_CF_Camouflage|True
 
+FACT:Ranger_Archetype_FavoredTerrain|True
+FACT:Ranger_Archetype_HuntersBond|True
+FACT:Ranger_Archetype_Camouflage|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Ranger Archetype ~ Dusk Stalker],[!PREFACT:1,ABILITIES,]
-CATEGORY=Archetype|Summoner Archetype ~ Shadow Caller.MOD
-FACT:Summoner_CF_Eidolon|True
-
-PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Summoner Archetype ~ Shadow Caller],[!PREFACT:1,ABILITIES,]
+CATEGORY=Archetype|Summoner Archetype ~ Shadow Caller.MOD	FACT:Summoner_CF_Eidolon|True	FACT:Summoner_Archetype_Eidolon|True	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Summoner Archetype ~ Shadow Caller],[!PREFACT:1,ABILITIES,Summoner_Archetype_Eidolon=True]
 CATEGORY=Archetype|Alchemist Archetype ~ Fire Bomber.MOD
 FACT:Alchemist_CF_Discovery4|True
 FACT:Alchemist_CF_PoisonResistance6|True
 FACT:Alchemist_CF_PoisonImmunity|True
 FACT:Alchemist_CF_PersistentMutagen|True
 
+FACT:Alchemist_Archetype_Discovery|True
+FACT:Alchemist_Archetype_PoisonResistance|True
+FACT:Alchemist_Archetype_PoisonImmunity|True
+FACT:Alchemist_Archetype_PersistentMutagen|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Alchemist Archetype ~ Fire Bomber],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Fell Rider ~ Cavalier Archetype.MOD
 FACT:Cavalier_CF_Mount|True
@@ -283,9 +367,15 @@ FACT:Cavalier_CF_MightyCharge|True
 FACT:Cavalier_CF_GreaterBanner|True
 FACT:Cavalier_CF_SupremeCharge|True
 
+FACT:Cavalier_Archetype_Mount|True
+FACT:Cavalier_Archetype_Charge|True
+FACT:Cavalier_Archetype_ExpertTrainer|True
+FACT:Cavalier_Archetype_Banner|True
+FACT:Cavalier_Archetype_MightyCharge|True
+FACT:Cavalier_Archetype_GreaterBanner|True
+FACT:Cavalier_Archetype_SupremeCharge|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Fell Rider ~ Cavalier Archetype],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Monk Archetype ~ Ironskin Monk.MOD
-
 FACT:Monk_CF_ACBonus|True
 FACT:Monk_CF_Evasion|True
 FACT:Monk_CF_KiPool|True
@@ -296,6 +386,15 @@ FACT:Monk_CF_ImprovedEvasion|True
 FACT:Monk_CF_TongueOfTheSunAndMoon|True
 FACT:Monk_CF_PerfectSelf|True
 
+FACT:Monk_Archetype_ACBonus|True
+FACT:Monk_Archetype_Evasion|True
+FACT:Monk_Archetype_KiPool|True
+FACT:Monk_Archetype_HighJump|True
+FACT:Monk_Archetype_FastMovement|True
+FACT:Monk_Archetype_SlowFall|True
+FACT:Monk_Archetype_ImprovedEvasion|True
+FACT:Monk_Archetype_TongueOfTheSunAndMoon|True
+FACT:Monk_Archetype_PerfectSelf|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Monk Archetype ~ Ironskin Monk],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Inquisitor Archetype ~ Immolator.MOD
 FACT:Inquisitor_CF_JudgmentSmiting|True
@@ -303,14 +402,21 @@ FACT:Inquisitor_CF_Bane|True
 FACT:Inquisitor_CF_GreaterBane|True
 FACT:Inquisitor_CF_TrueJudgement|True
 
+FACT:Inquisitor_Archetype_JudgmentSmiting|True
+FACT:Inquisitor_Archetype_Bane|True
+FACT:Inquisitor_Archetype_GreaterBane|True
+FACT:Inquisitor_Archetype_TrueJudgement|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Inquisitor Archetype ~ Immolator],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Wishcrafter ~ Sorcerer Archetype.MOD
 FACT:Sorcerer_CF_BloodlineArcana|True
-FACT:Sorcerer_CF_Sorcerer_CF_BloodlineBonusSpell|True
+FACT:Sorcerer_CF_BloodlineBonusSpell|True
 FACT:Sorcerer_CF_BloodlineBonusFeat7|True
 FACT:Sorcerer_CF_BloodlineBonusFeat13|True
 FACT:Sorcerer_CF_BloodlineBonusFeat19|True
 
+FACT:Sorcerer_Archetype_BloodlineArcana|True
+FACT:Sorcerer_Archetype_BloodlineBonusSpell|True
+FACT:Sorcerer_Archetype_BloodlineBonusFeat|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Wishcrafter ~ Sorcerer Archetype],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Gunslinger Archetype ~ Bushwhacker.MOD
 FACT:Gunslinger_CF_Grit|True
@@ -322,6 +428,10 @@ FACT:Gunslinger_CF_BonusFeat12|True
 FACT:Gunslinger_CF_BonusFeat16|True
 FACT:Gunslinger_CF_BonusFeat20|True
 
+FACT:Gunslinger_Archetype_Grit|True
+FACT:Gunslinger_Archetype_UtilityShot|True
+FACT:Gunslinger_Archetype_Targeting|True
+FACT:Gunslinger_Archetype_BonusFeat|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Gunslinger Archetype ~ Bushwhacker],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Fighter Archetype ~ Dirty Fighter.MOD
 FACT:Fighter_CF_Bravery|True
@@ -330,14 +440,17 @@ FACT:Fighter_CF_WeaponTraining2|True
 FACT:Fighter_CF_WeaponTraining3|True
 FACT:Fighter_CF_WeaponTraining4|True
 
+FACT:Fighter_Archetype_Bravery|True
+FACT:Fighter_Archetype_WeaponTraining|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Fighter Archetype ~ Dirty Fighter],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Witch Archetype ~ Scarred Witch Doctor.MOD
 FACT:Witch_CF_Familiar|True
 FACT:Witch_CF_Hex1|True
 
+FACT:Witch_Archetype_Familiar|True
+FACT:Witch_Archetype_Hex|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Witch Archetype ~ Scarred Witch Doctor],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Monk Archetype ~ Student of Stone.MOD
-
 FACT:Monk_CF_Evasion|True
 FACT:Monk_CF_FastMovement|True
 FACT:Monk_CF_HighJump|True
@@ -345,6 +458,12 @@ FACT:Monk_CF_ImprovedEvasion|True
 FACT:Monk_CF_AbundantStep|True
 FACT:Monk_CF_PerfectSelf|True
 
+FACT:Monk_Archetype_Evasion|True
+FACT:Monk_Archetype_FastMovement|True
+FACT:Monk_Archetype_HighJump|True
+FACT:Monk_Archetype_ImprovedEvasion|True
+FACT:Monk_Archetype_AbundantStep|True
+FACT:Monk_Archetype_PerfectSelf|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Monk Archetype ~ Student of Stone],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Gunslinger Archetype ~ Gulch Gunner.MOD
 FACT:Gunslinger_CF_Grit|True
@@ -355,6 +474,11 @@ FACT:Gunslinger_CF_GunTraining9|True
 FACT:Gunslinger_CF_GunTraining13|True
 FACT:Gunslinger_CF_GunTraining17|True
 
+FACT:Gunslinger_Archetype_Grit|True
+FACT:Gunslinger_Archetype_DeadeyeDeed|True
+FACT:Gunslinger_Archetype_PistolWhipDeed|True
+FACT:Gunslinger_Archetype_MenacingShotDeed|True
+FACT:Gunslinger_Archetype_GunTraining|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Gunslinger Archetype ~ Gulch Gunner],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Alchemist Archetype ~ Plague Bringer.MOD
 FACT:Alchemist_CF_Mutagen|True
@@ -364,6 +488,9 @@ FACT:Alchemist_CF_PoisonResistance4|True
 FACT:Alchemist_CF_PoisonResistance6|True
 FACT:Alchemist_CF_PoisonImmunity|True
 
+FACT:Alchemist_Archetype_Mutagen|True
+FACT:Alchemist_Archetype_PoisonResistance|True
+FACT:Alchemist_Archetype_PoisonImmunity|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Alchemist Archetype ~ Plague Bringer],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Druid Archetype ~ Sky Druid.MOD
 FACT:Druid_CF_NatureSense|True
@@ -374,13 +501,21 @@ FACT:Druid_CF_WildShape|True
 FACT:Druid_CF_VenomImmunity|True
 FACT:Druid_CF_ThousandFaces|True
 
+FACT:Druid_Archetype_NatureSense|True
+FACT:Druid_Archetype_WoodlandStride|True
+FACT:Druid_Archetype_ResistNaturesLure|True
+FACT:Druid_Archetype_TracklessStep|True
+FACT:Druid_Archetype_WildShape|True
+FACT:Druid_Archetype_VenomImmunity|True
+FACT:Druid_Archetype_ThousandFaces|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Sky Druid],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Wizard Archetype ~ Wind Listener.MOD
 FACT:Wizard_CF_ArcaneBond|True
 FACT:Wizard_CF_BonusFeat5|True
 FACT:Wizard_CF_BonusFeat10|True
-FACT:Wizard_CF_BonusFeat15																																																							!PREABILITY:1,CATEGORY=Special Ability,Divination Opposition School,Illusion Opposition School|True
-
+FACT:Wizard_CF_BonusFeat15
+FACT:Wizard_Archetype_ArcaneBond|True
+FACT:Wizard_Archetype_BonusFeat|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Wizard Archetype ~ Wind Listener],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Oracle Archetype ~ Shigenjo.MOD
 FACT:Oracle_CF_MysterySpell2|True
@@ -392,14 +527,18 @@ FACT:Oracle_CF_Revelation7|True
 FACT:Oracle_CF_Revelation15|True
 FACT:Oracle_CF_Revelation20|True
 
+FACT:Oracle_Archetype_MysterySpell|True
+FACT:Oracle_Archetype_Revelation|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Oracle Archetype ~ Shigenjo],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Rogue Archetype ~ Swordmaster.MOD
-FACT:Rogue_CF_TrapSense1|True
-FACT:Rogue_CF_TrapSense2|True
-FACT:Rogue_CF_TrapSense3|True
-FACT:Rogue_CF_TrapSense4|True
-FACT:Rogue_CF_TrapSense5|True
-FACT:Rogue_CF_TrapSense6|True
+	FACT:Rogue_CF_TrapSense1|True
+	FACT:Rogue_CF_TrapSense2|True
+	FACT:Rogue_CF_TrapSense3|True
+	FACT:Rogue_CF_TrapSense4|True
+	FACT:Rogue_CF_TrapSense5|True
+	FACT:Rogue_CF_TrapSense6|True
+	FACT:Rogue_Archetype_TrapSense|True
+	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Rogue Archetype ~ Swordmaster],[!PREFACT:1,ABILITIES,Rogue_Archetype_TrapSense=True]
 
 CATEGORY=Archetype|Cleric Archetype ~ Fiendish Vessel.MOD
 FACT:Cleric_CF_ChannelEnergy1|True
@@ -413,6 +552,7 @@ FACT:Cleric_CF_ChannelEnergy8|True
 FACT:Cleric_CF_ChannelEnergy9|True
 FACT:Cleric_CF_ChannelEnergy10|True
 
+FACT:Cleric_Archetype_ChannelEnergy|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Cleric Archetype ~ Fiendish Vessel],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Druid Archetype ~ Undine Adept.MOD
 FACT:Druid_CF_WoodlandStride|True
@@ -421,6 +561,11 @@ FACT:Druid_CF_ResistNaturesLure|True
 FACT:Druid_CF_WildShape|True
 FACT:Druid_CF_VenomImmunity|True
 
+FACT:Druid_Archetype_WoodlandStride|True
+FACT:Druid_Archetype_TracklessStep|True
+FACT:Druid_Archetype_ResistNaturesLure|True
+FACT:Druid_Archetype_WildShape|True
+FACT:Druid_Archetype_VenomImmunity|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Undine Adept],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Bard Archetype ~ Watersinger.MOD
 FACT:Bard_CF_Fascinate|True
@@ -429,12 +574,15 @@ FACT:Bard_CF_MassSuggestion|True
 FACT:Bard_CF_InspireCompetence|True
 FACT:Bard_CF_LoreMaster|True
 
+FACT:Bard_Archetype_BardicPerformance|True
+FACT:Bard_Archetype_LoreMaster|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Bard Archetype ~ Watersinger],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Witch Archetype ~ Dreamweaver.MOD
 FACT:Witch_CF_Hex2|True
 FACT:Witch_CF_Hex6|True
 FACT:Witch_CF_Hex10|True
 
+FACT:Witch_Archetype_Hex|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Witch Archetype ~ Dreamweaver],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Monk Archetype ~ Gray Disciple.MOD
 FACT:Monk_CF_SlowFall|True
@@ -447,20 +595,34 @@ FACT:Monk_CF_QuiveringPalm|True
 FACT:Monk_CF_TongueOfTheSunAndMoon|True
 FACT:Monk_CF_EmptyBody|True
 
+FACT:Monk_Archetype_SlowFall|True
+FACT:Monk_Archetype_StillMind|True
+FACT:Monk_Archetype_HighJump|True
+FACT:Monk_Archetype_BonusFeat|True
+FACT:Monk_Archetype_WholenessOfBody|True
+FACT:Monk_Archetype_AbundantStep|True
+FACT:Monk_Archetype_QuiveringPalm|True
+FACT:Monk_Archetype_TongueOfTheSunAndMoon|True
+FACT:Monk_Archetype_EmptyBody|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Monk Archetype ~ Gray Disciple],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Rogue Archetype ~ Eldritch Raider.MOD
 FACT:Rogue_CF_Talent2|True
 FACT:Rogue_CF_TrapSense|True
 
+FACT:Rogue_Archetype_Talent|True
+FACT:Rogue_Archetype_TrapSense|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Rogue Archetype ~ Eldritch Raider],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Alchemist Archetype ~ Bogborn Alchemist.MOD
 FACT:Alchemist_CF_ThrowAnything|True
 
+FACT:Alchemist_Archetype_ThrowAnything|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Alchemist Archetype ~ Bogborn Alchemist],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Rogue Archetype ~ Kitsune Trickster.MOD
 FACT:Rogue_CF_Trapfinding|True
 FACT:Rogue_CF_TrapSense|True
 
+FACT:Rogue_Archetype_Trapfinding|True
+FACT:Rogue_Archetype_TrapSense|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Rogue Archetype ~ Kitsune Trickster],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Ranger Archetype ~ Wave Warden.MOD
 FACT:Ranger_CF_Track|True
@@ -474,6 +636,12 @@ FACT:Ranger_CF_WoodlandStride|True
 FACT:Ranger_CF_SwiftTracker|True
 FACT:Ranger_CF_CombatStyle|True
 
+FACT:Ranger_Archetype_Track|True
+FACT:Ranger_Archetype_BonusFeat|True
+FACT:Ranger_Archetype_FavoredTerrain|True
+FACT:Ranger_Archetype_WoodlandStride|True
+FACT:Ranger_Archetype_SwiftTracker|True
+FACT:Ranger_Archetype_CombatStyle|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Ranger Archetype ~ Wave Warden],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Druid Archetype ~ Naga Aspirant.MOD
 FACT:Druid_CF_SpontaneousCasting|True
@@ -483,6 +651,12 @@ FACT:Druid_CF_VenomImmunity|True
 FACT:Druid_CF_AThousandFaces|True
 FACT:Druid_CF_TimelessBody|True
 
+FACT:Druid_Archetype_SpontaneousCasting|True
+FACT:Druid_Archetype_ResistNaturesLure|True
+FACT:Druid_Archetype_WildShape|True
+FACT:Druid_Archetype_VenomImmunity|True
+FACT:Druid_Archetype_AThousandFaces|True
+FACT:Druid_Archetype_TimelessBody|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Naga Aspirant],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Oracle Archetype ~ Reincarnated Oracle.MOD
 FACT:Oracle_CF_MysterySpell2|True
@@ -494,6 +668,8 @@ FACT:Oracle_CF_MysteryRevelation1|True
 FACT:Oracle_CF_MysteryRevelation3|True
 FACT:Oracle_CF_MysteryRevelation7|True
 
+FACT:Oracle_Archetype_MysterySpell|True
+FACT:Oracle_Archetype_MysteryRevelation|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Oracle Archetype ~ Reincarnated Oracle],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Fighter Archetype ~ Airborne Ambusher.MOD
 FACT:Fighter_CF_Bravery|True
@@ -502,21 +678,29 @@ FACT:Fighter_CF_WeaponTraining2|True
 FACT:Fighter_CF_WeaponTraining3|True
 FACT:Fighter_CF_WeaponTraining4|True
 
+FACT:Fighter_Archetype_Bravery|True
+FACT:Fighter_Archetype_WeaponTraining|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Fighter Archetype ~ Airborne Ambusher],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Magus Archetype ~ Elemental Knight.MOD
 FACT:Magus_CF_SpellRecall|True
 
+FACT:Magus_Archetype_SpellRecall|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Magus Archetype],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Alchemist Archetype ~ Deep Bomber.MOD
 FACT:Alchemist_CF_PoisonUse|True
 FACT:Alchemist_CF_SwiftAlchemy|True
 FACT:Alchemist_CF_SwiftPoisoning|True
 
+FACT:Alchemist_Archetype_PoisonUse|True
+FACT:Alchemist_Archetype_SwiftAlchemy|True
+FACT:Alchemist_Archetype_SwiftPoisoning|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Alchemist Archetype ~ Deep Bomber],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Monk Archetype ~ Treetop Monk.MOD
 FACT:Monk_CF_StillMind|True
 FACT:Monk_CF_PurityOfBody|True
 
+FACT:Monk_Archetype_StillMind|True
+FACT:Monk_Archetype_PurityOfBody|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Monk Archetype ~ Treetop Monk],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Rogue Archetype ~ Deadly Courtesan.MOD
 FACT:Rogue_CF_Trick2|True
@@ -528,6 +712,9 @@ FACT:Rogue_CF_TrapSense5|True
 FACT:Rogue_CF_TrapSense6|True
 FACT:Rogue_CF_UncannyDodge|True
 
+FACT:Rogue_Archetype_Trick|True
+FACT:Rogue_Archetype_TrapSense|True
+FACT:Rogue_Archetype_UncannyDodge|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Rogue Archetype ~ Deadly Courtesan],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Bard Archetype ~ Shadow Puppeteer.MOD
 FACT:Bard_CF_InspireCourage1|True
@@ -541,6 +728,7 @@ FACT:Bard_CF_InspireCompetence4|True
 FACT:Bard_CF_InspireCompetence5|True
 FACT:Bard_CF_InspireCompetence6|True
 
+FACT:Bard_Archetype_BardicPerformance|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Bard Archetype ~ Shadow Puppeteer],[!PREFACT:1,ABILITIES,]
 
 ###Ultimate Combat
@@ -553,18 +741,28 @@ FACT:Alchemist_CF_PoisonResistance6|True
 FACT:Alchemist_CF_PoisonImmunity|True
 FACT:Alchemist_CF_PersistentMutagen|True
 
+FACT:Alchemist_Archetype_SwiftAlchemy|True
+FACT:Alchemist_Archetype_PoisonResistance|True
+FACT:Alchemist_Archetype_PoisonImmunity|True
+FACT:Alchemist_Archetype_PersistentMutagen|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Alchemist Archetype ~ BEASTMORPH],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Alchemist Archetype ~ Ragechemist.MOD
 FACT:Alchemist_CF_PoisonUse|True
 FACT:Alchemist_CF_SwiftPoisoning|True
 FACT:Alchemist_CF_PoisonImmunity|True
 
+FACT:Alchemist_Archetype_PoisonUse|True
+FACT:Alchemist_Archetype_SwiftPoisoning|True
+FACT:Alchemist_Archetype_PoisonImmunity|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Alchemist Archetype ~ RAGECHEMIST],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Bard Archetype ~ Archaeologist.MOD
 FACT:Bard_CF_BardicPerformance|True
 FACT:Bard_CF_VersatilePerformance|True
 FACT:Bard_CF_WellVersed|True
 
+FACT:Bard_Archetype_BardicPerformance|True
+FACT:Bard_Archetype_VersatilePerformance|True
+FACT:Bard_Archetype_WellVersed|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Archaeologist ~ Bard Archetype],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Bard Archetype ~ Daredevil.MOD
 FACT:Bard_CF_BardicKnowledge|True
@@ -573,6 +771,11 @@ FACT:Bard_CF_VersatilePerformance|True
 FACT:Bard_CF_WellVersed|True
 FACT:Bard_CF_LoreMaster|True
 
+FACT:Bard_Archetype_BardicKnowledge|True
+FACT:Bard_Archetype_BardicPerformance|True
+FACT:Bard_Archetype_VersatilePerformance|True
+FACT:Bard_Archetype_WellVersed|True
+FACT:Bard_Archetype_LoreMaster|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,DAREDEVIL ~ Bard Archetype],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Bard Archetype ~ Dervish Dancer.MOD
 FACT:Bard_CF_Suggestion|True
@@ -586,12 +789,20 @@ FACT:Bard_CF_SoothingPerformance|True
 FACT:Bard_CF_DeadlyPerformance|True
 FACT:Bard_CF_WeaponProficiencies|True
 
+FACT:Bard_Archetype_BardicKnowledge|True
+FACT:Bard_Archetype_LoreMaster|True
+FACT:Bard_Archetype_VersatilePerformance|True
+FACT:Bard_Archetype_BardicPerformance|True
+FACT:Bard_Archetype_Proficiencies|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,DERVISH DANCER ~ Bard Archetype],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Cavalier Archetype ~ Beast Rider.MOD
 FACT:Cavalier_CF_HeavyArmorProficiency|True
 FACT:Cavalier_CF_Mount|True
 FACT:Cavalier_CF_ExpertTrainer|True
 
+FACT:Cavalier_Archetype_Proficiency|True
+FACT:Cavalier_Archetype_Mount|True
+FACT:Cavalier_Archetype_ExpertTrainer|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Cavalier Archetype ~ BEAST RIDER],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Cavalier Archetype ~ Emissary.MOD
 FACT:Cavalier_CF_HeavyArmorProficiency|True
@@ -602,6 +813,13 @@ FACT:Cavalier_CF_GreaterBanner|True
 FACT:Cavalier_CF_SupremeCharge|True
 FACT:Cavalier_CF_BonusFeats|True
 
+FACT:Cavalier_Archetype_HeavyArmorProficiency|True
+FACT:Cavalier_Archetype_Tactician|True
+FACT:Cavalier_Archetype_Banner|True
+FACT:Cavalier_Archetype_GreaterTactician|True
+FACT:Cavalier_Archetype_GreaterBanner|True
+FACT:Cavalier_Archetype_SupremeCharge|True
+FACT:Cavalier_Archetype_BonusFeats|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Cavalier Archetype ~ EMISSARY],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Cavalier Archetype ~ Gendarme.MOD
 FACT:Cavalier_CF_Tactician|True
@@ -610,12 +828,20 @@ FACT:Cavalier_CF_MasterTactician|True
 FACT:Cavalier_CF_BonusFeat|True
 FACT:Cavalier_CF_SupremeCharge|True
 
+FACT:Cavalier_Archetype_Tactician|True
+FACT:Cavalier_Archetype_GreaterTactician|True
+FACT:Cavalier_Archetype_MasterTactician|True
+FACT:Cavalier_Archetype_BonusFeat|True
+FACT:Cavalier_Archetype_SupremeCharge|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Cavalier Archetype ~ GENDARME],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Cavalier Archetype ~ Honor Guard.MOD
 FACT:Cavalier_CF_CavaliersCharge|True
 FACT:Cavalier_CF_DemandingChallenge|True
 FACT:Cavalier_CF_MightyCharge|True
 
+FACT:Cavalier_Archetype_CavaliersCharge|True
+FACT:Cavalier_Archetype_DemandingChallenge|True
+FACT:Cavalier_Archetype_MightyCharge|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Cavalier Archetype ~ HONOR GUARD],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Cavalier Archetype ~ Luring Cavalier.MOD
 FACT:Cavalier_CF_Challenge|True
@@ -623,12 +849,19 @@ FACT:Cavalier_CF_CavaliersCharge|True
 FACT:Cavalier_CF_MightyCharge|True
 FACT:Cavalier_CF_SupremeCharge|True
 
+FACT:Cavalier_Archetype_Challenge|True
+FACT:Cavalier_Archetype_CavaliersCharge|True
+FACT:Cavalier_Archetype_MightyCharge|True
+FACT:Cavalier_Archetype_SupremeCharge|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Cavalier Archetype ~ LURING CAVALIER],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Cavalier Archetype ~ Musketeer.MOD
 FACT:Cavalier_CF_Mount|True
 FACT:Cavalier_CF_ExpertTrainer|True
 FACT:Cavalier_CF_HeavyArmorProficiency|True
 
+FACT:Cavalier_Archetype_Mount|True
+FACT:Cavalier_Archetype_ExpertTrainer|True
+FACT:Cavalier_Archetype_Proficiency|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Cavalier Archetype ~ MUSKETEER],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Cavalier Archetype ~ Standard Bearer.MOD
 FACT:Cavalier_CF_Mount|True
@@ -636,21 +869,31 @@ FACT:Cavalier_CF_CavaliersBanner|True
 FACT:Cavalier_CF_MightyCharge|True
 FACT:Cavalier_CF_SupremeCharge|True
 
+FACT:Cavalier_Archetype_Mount|True
+FACT:Cavalier_Archetype_CavaliersBanner|True
+FACT:Cavalier_Archetype_MightyCharge|True
+FACT:Cavalier_Archetype_SupremeCharge|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Cavalier Archetype ~ STANDARD BEARER],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Cavalier Archetype ~ Strategist.MOD
 FACT:Cavalier_CF_ExpertTrainer|True
 FACT:Cavalier_CF_GreaterBanner|True
 FACT:Cavalier_CF_CavaliersBonusFeat18|True
 
+FACT:Cavalier_Archetype_ExpertTrainer|True
+FACT:Cavalier_Archetype_GreaterBanner|True
+FACT:Cavalier_Archetype_CavaliersBonusFeat|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Cavalier Archetype ~ STRATEGIST],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Cleric Archetype ~ Crusader.MOD
 FACT:Cleric_CF_Domains|True
 
+FACT:Cleric_Archetype_Domains|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Cleric Archetype ~ Crusader],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Cleric Archetype ~ Divine Strategist.MOD
 FACT:Cleric_CF_Domains|True
 FACT:Cleric_CF_ChannelEnergy|True
 
+FACT:Cleric_Archetype_Domains|True
+FACT:Cleric_Archetype_ChannelEnergy|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Cleric Archetype ~ Divine Strategist],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Cleric Archetype ~ Evangelist.MOD
 FACT:Cleric_CF_Domains|True
@@ -658,29 +901,44 @@ FACT:Cleric_CF_ArmorProficiency|True
 FACT:Cleric_CF_SpontaneousCasting|True
 FACT:Cleric_CF_ChannelEnergy|True
 
+FACT:Cleric_Archetype_Domains|True
+FACT:Cleric_Archetype_ArmorProficiency|True
+FACT:Cleric_Archetype_SpontaneousCasting|True
+FACT:Cleric_Archetype_ChannelEnergy|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Cleric Archetype ~ Evangelist],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Cleric Archetype ~ Merciful Healer.MOD
 FACT:Cleric_CF_Domains|True
 FACT:Cleric_CF_ChannelEnergy|True
 
+FACT:Cleric_Archetype_Domains|True
+FACT:Cleric_Archetype_ChannelEnergy|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Cleric Archetype ~ Merciful Healer],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Druid Archetype ~ Ape Shaman.MOD
 FACT:Druid_CF_ThousandFaces|True
 FACT:Druid_CF_VenomImmunity|True
 FACT:Druid_CF_NatureBond|True
 
+FACT:Druid_Archetype_ThousandFaces|True
+FACT:Druid_Archetype_VenomImmunity|True
+FACT:Druid_Archetype_NatureBond|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Ape Shaman],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Druid Archetype ~ Bat Shaman.MOD
 FACT:Druid_CF_ThousandFaces|True
 FACT:Druid_CF_VenomImmunity|True
 FACT:Druid_CF_NatureBond|True
 
+FACT:Druid_Archetype_ThousandFaces|True
+FACT:Druid_Archetype_VenomImmunity|True
+FACT:Druid_Archetype_NatureBond|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Bat Shaman],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Druid Archetype ~ Boar Shaman.MOD
 FACT:Druid_CF_ThousandFaces|True
 FACT:Druid_CF_VenomImmunity|True
 FACT:Druid_CF_NatureBond|True
 
+FACT:Druid_Archetype_ThousandFaces|True
+FACT:Druid_Archetype_VenomImmunity|True
+FACT:Druid_Archetype_NatureBond|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Boar Shaman],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Druid Archetype ~ World Walker.MOD
 FACT:Druid_CF_TracklessStep|True
@@ -688,6 +946,10 @@ FACT:Druid_CF_ResistNaturesLure|True
 FACT:Druid_CF_VenomImmunity|True
 FACT:Druid_CF_TimelessBody|True
 
+FACT:Druid_Archetype_TracklessStep|True
+FACT:Druid_Archetype_ResistNaturesLure|True
+FACT:Druid_Archetype_VenomImmunity|True
+FACT:Druid_Archetype_TimelessBody|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ World Walker],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Fighter Archetype ~ Armor Master.MOD
 FACT:Fighter_CF_Bravery|True
@@ -699,6 +961,10 @@ FACT:Fighter_CF_WeaponTraining4|True
 FACT:Fighter_CF_ArmorMastery|True
 FACT:Fighter_CF_WeaponMastery|True
 
+FACT:Fighter_Archetype_Bravery|True
+FACT:Fighter_Archetype_WeaponTraining|True
+FACT:Fighter_Archetype_ArmorMastery|True
+FACT:Fighter_Archetype_WeaponMastery|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Fighter Archetype ~ ARMOR MASTER],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Fighter Archetype ~ Brawler.MOD
 FACT:Fighter_CF_ArmorTraining1|True
@@ -713,6 +979,10 @@ FACT:Fighter_CF_ArmorMastery|True
 FACT:Fighter_CF_ArmorTraining|True
 FACT:Fighter_CF_WeaponTraining|True
 
+FACT:Fighter_Archetype_ArmorTraining|True
+FACT:Fighter_Archetype_ArmorMastery|True
+FACT:Fighter_Archetype_ArmorTraining|True
+FACT:Fighter_Archetype_WeaponTraining|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Fighter Archetype ~ BRAWLER],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Fighter Archetype ~ Cad.MOD
 FACT:Fighter_CF_ArmorProficiencies|True
@@ -729,6 +999,11 @@ FACT:Fighter_CF_WeaponTraining|True
 FACT:Fighter_CF_ArmorTraining|True
 FACT:Fighter_CF_WeaponMastery|True
 
+FACT:Fighter_Archetype_Proficiencies|True
+FACT:Fighter_Archetype_Bravery|True
+FACT:Fighter_Archetype_ArmorTraining|True
+FACT:Fighter_Archetype_WeaponTraining|True
+FACT:Fighter_Archetype_WeaponMastery|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Fighter Archetype ~ CAD],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Fighter Archetype ~ Dragoon.MOD
 FACT:Fighter_CF_TowerShieldProficiency|True
@@ -738,12 +1013,19 @@ FACT:Fighter_CF_ArmorTraining2|True
 FACT:Fighter_CF_WeaponTraining|True
 FACT:Fighter_CF_ArmorTraining4|True
 
+FACT:Fighter_Archetype_Proficiency|True
+FACT:Fighter_Archetype_BonusFeat|True
+FACT:Fighter_Archetype_ArmorTraining|True
+FACT:Fighter_Archetype_WeaponTraining|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Fighter Archetype ~ DRAGOON],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Fighter Archetype ~ Gladiator.MOD
 FACT:Fighter_CF_ArmorProficiencies|True
 FACT:Fighter_CF_Bravery|True
 FACT:Fighter_CF_BonusFeats|True
 
+FACT:Fighter_Archetype_Proficiencies|True
+FACT:Fighter_Archetype_Bravery|True
+FACT:Fighter_Archetype_BonusFeats|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Fighter Archetype ~ GLADIATOR],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Fighter Archetype ~ Tactician.MOD
 FACT:Fighter_CF_ArmorProficiencies|True
@@ -754,6 +1036,12 @@ FACT:Fighter_CF_ArmorTraining3|True
 FACT:Fighter_CF_ArmorTraining4|True
 FACT:Fighter_CF_BonusFeats|True
 
+FACT:Fighter_Archetype_ArmorProficiencies|True
+FACT:Fighter_Archetype_BonusFeat|True
+FACT:Fighter_Archetype_Bravery|True
+FACT:Fighter_Archetype_WeaponTraining|True
+FACT:Fighter_Archetype_ArmorTraining|True
+FACT:Fighter_Archetype_BonusFeats|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Fighter Archetype ~ TACTICIAN],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Fighter Archetype ~ Thunderstriker.MOD
 FACT:Fighter_CF_ArmorTraining1|True
@@ -764,6 +1052,9 @@ FACT:Fighter_CF_ArmorMastery|True
 FACT:Fighter_CF_WeaponTraining3|True
 FACT:Fighter_CF_WeaponTraining4|True
 
+FACT:Fighter_Archetype_ArmorTraining|True
+FACT:Fighter_Archetype_ArmorMastery|True
+FACT:Fighter_Archetype_WeaponTraining|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Fighter Archetype ~ THUNDERSTRIKER],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Fighter Archetype ~ Tower Shield Specialist.MOD
 FACT:Fighter_CF_Bravery|True
@@ -771,8 +1062,11 @@ FACT:Fighter_CF_WeaponTraining1|True
 FACT:Fighter_CF_WeaponTraining2|True
 FACT:Fighter_CF_WeaponTraining3|True
 FACT:Fighter_CF_WeaponTraining4|True
-WeaponMastery|True
+FACT:Fighter_CF_WeaponMastery|True
 
+FACT:Fighter_Archetype_Bravery|True
+FACT:Fighter_Archetype_WeaponTraining|True
+FACT:Fighter_Archetype_WeaponMastery|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Fighter Archetype ~ TOWER SHIELD SPECIALIST],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Fighter Archetype ~ Unarmed Fighter.MOD
 FACT:Fighter_CF_ArmorProficiencies|True
@@ -783,6 +1077,13 @@ FACT:Fighter_CF_ArmorTraining|True
 FACT:Fighter_CF_ArmorMastery|True
 FACT:Fighter_CF_WeaponMastery|True
 
+FACT:Fighter_Archetype_Proficiencies|True
+FACT:Fighter_Archetype_BonusFeat|True
+FACT:Fighter_Archetype_Bravery|True
+FACT:Fighter_Archetype_WeaponTraining|True
+FACT:Fighter_Archetype_ArmorTraining|True
+FACT:Fighter_Archetype_ArmorMastery|True
+FACT:Fighter_Archetype_WeaponMastery|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Fighter Archetype ~ Unarmed Fighter],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Fighter Archetype ~ Unbreakable.MOD
 FACT:Fighter_CF_TowerShieldProficiency|True
@@ -795,6 +1096,11 @@ FACT:Fighter_CF_WeaponTraining4|True
 FACT:Fighter_CF_ArmorTraining3|True
 FACT:Fighter_CF_ArmorTraining4|True
 
+FACT:Fighter_Archetype_Proficiency|True
+FACT:Fighter_Archetype_BonusFeat|True
+FACT:Fighter_Archetype_Bravery|True
+FACT:Fighter_Archetype_WeaponTraining|True
+FACT:Fighter_Archetype_ArmorTraining|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Fighter Archetype ~ UNBREAKABLE],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Gunslinger Archetype ~ Gun Tank.MOD
 FACT:Gunslinger_CF_DodgeDeed|True
@@ -802,6 +1108,10 @@ FACT:Gunslinger_CF_EvasiveDeed|True
 FACT:Gunslinger_CF_Nimble|True
 FACT:Gunslinger_CF_BonusFeat|True
 
+FACT:Gunslinger_Archetype_DodgeDeed|True
+FACT:Gunslinger_Archetype_EvasiveDeed|True
+FACT:Gunslinger_Archetype_Nimble|True
+FACT:Gunslinger_Archetype_BonusFeat|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Gunslinger Archetype ~ GUN TANK],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Gunslinger Archetype ~ Musket Master.MOD
 FACT:Gunslinger_CF_DodgeDeed|True
@@ -811,6 +1121,9 @@ FACT:Gunslinger_CF_FirearmTraining2|True
 FACT:Gunslinger_CF_FirearmTraining3|True
 FACT:Gunslinger_CF_FirearmTraining4|True
 
+FACT:Gunslinger_Archetype_DodgeDeed|True
+FACT:Gunslinger_Archetype_UtilityShotDeed|True
+FACT:Gunslinger_Archetype_FirearmTraining|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Gunslinger Archetype ~ MUSKET MASTER],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Gunslinger Archetype ~ Mysterious Stranger.MOD
 FACT:Gunslinger_CF_QuickClearDeed|True
@@ -819,6 +1132,11 @@ FACT:Gunslinger_CF_Nimble|True
 FACT:Gunslinger_CF_GunTraining1|True
 FACT:Gunslinger_CF_Grit|True
 
+FACT:Gunslinger_Archetype_QuickClearDeed|True
+FACT:Gunslinger_Archetype_BleedingWoundDeed|True
+FACT:Gunslinger_Archetype_Nimble|True
+FACT:Gunslinger_Archetype_GunTraining1|True
+FACT:Gunslinger_Archetype_Grit|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Gunslinger Archetype ~ MYSTERIOUS STRANGER],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Gunslinger Archetype ~ Pistolero.MOD
 FACT:Gunslinger_CF_GunTraining|True
@@ -826,6 +1144,10 @@ FACT:Gunslinger_CF_DeadeyeDeed|True
 FACT:Gunslinger_CF_StartlingShotDeed|True
 FACT:Gunslinger_CF_BleedingWoundDeed|True
 
+FACT:Gunslinger_Archetype_GunTraining|True
+FACT:Gunslinger_Archetype_DeadeyeDeed|True
+FACT:Gunslinger_Archetype_StartlingShotDeed|True
+FACT:Gunslinger_Archetype_BleedingWoundDeed|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Gunslinger Archetype ~ PISTOLERO],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Inquisitor Archetype ~ Iconoclast.MOD
 FACT:Inquisitor_CF_MonsterLore|True
@@ -834,6 +1156,11 @@ FACT:Inquisitor_CF_DiscernLies|True
 FACT:Inquisitor_CF_ExploitWeakness|True
 FACT:Inquisitor_CF_TrueJudgment|True
 
+FACT:Inquisitor_Archetype_MonsterLore|True
+FACT:Inquisitor_Archetype_DetectAlignment|True
+FACT:Inquisitor_Archetype_DiscernLies|True
+FACT:Inquisitor_Archetype_ExploitWeakness|True
+FACT:Inquisitor_Archetype_TrueJudgment|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Inquisitor Archetype ~ ICONOCLAST],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Inquisitor Archetype ~ Spellbreaker.MOD
 FACT:Inquisitor_CF_MonsterLore|True
@@ -841,6 +1168,10 @@ FACT:Inquisitor_CF_TeamworkFeat|True
 FACT:Inquisitor_CF_SoloTactics|True
 FACT:Inquisitor_CF_FinalJudgment|True
 
+FACT:Inquisitor_Archetype_MonsterLore|True
+FACT:Inquisitor_Archetype_TeamworkFeat|True
+FACT:Inquisitor_Archetype_SoloTactics|True
+FACT:Inquisitor_Archetype_FinalJudgment|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Inquisitor Archetype ~ SPELLBREAKER],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Inquisitor Archetype ~ Witch Hunter.MOD
 FACT:Inquisitor_CF_MonsterLore|True
@@ -850,6 +1181,12 @@ FACT:Inquisitor_CF_TrueJudgment|True
 FACT:Inquisitor_CF_Track|True
 FACT:Inquisitor_CF_ExploitWeakness|True
 
+FACT:Inquisitor_Archetype_MonsterLore|True
+FACT:Inquisitor_Archetype_DetectAlignment|True
+FACT:Inquisitor_Archetype_DiscernLies|True
+FACT:Inquisitor_Archetype_TrueJudgment|True
+FACT:Inquisitor_Archetype_Track|True
+FACT:Inquisitor_Archetype_ExploitWeakness|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Inquisitor Archetype ~ ],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Magus Archetype ~ Kensai.MOD
 FACT:Magus_CF_SpellRecall|True
@@ -861,6 +1198,12 @@ FACT:Magus_CF_ArmorHeavy|True
 FACT:Magus_CF_Arcana9|True
 FACT:Magus_CF_ImprovedSpellRecall|True
 
+FACT:Magus_Archetype_SpellRecall|True
+FACT:Magus_Archetype_KnowledgePool|True
+FACT:Magus_Archetype_WeaponProficiency|True
+FACT:Magus_Archetype_ArmorProficiency|True
+FACT:Magus_Archetype_Arcana|True
+FACT:Magus_Archetype_ImprovedSpellRecall|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Magus Archetype ~ Kensai],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Magus Archetype ~ Myrmidarch.MOD
 FACT:Magus_CF_SpellRecall|True
@@ -874,6 +1217,14 @@ FACT:Magus_CF_GreaterSpellCombat|True
 FACT:Magus_CF_TrueMagus|True
 FACT:Magus_CF_FighterTraining|True
 
+FACT:Magus_Archetype_SpellRecall|True
+FACT:Magus_Archetype_ImprovedSpellRecall|True
+FACT:Magus_Archetype_Arcana|True
+FACT:Magus_Archetype_KnowledgePool|True
+FACT:Magus_Archetype_ImprovedSpellCombat|True
+FACT:Magus_Archetype_GreaterSpellCombat|True
+FACT:Magus_Archetype_TrueMagus|True
+FACT:Magus_Archetype_FighterTraining|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Magus Archetype ~ Myrmidarch],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Magus Archetype ~ Skirnir.MOD
 FACT:Magus_CF_SpellRecall|True
@@ -883,6 +1234,12 @@ FACT:Magus_CF_ImprovedSpellCombat|True
 FACT:Magus_CF_GreaterSpellCombat|True
 FACT:Magus_CF_GreaterSpellAccess|True
 
+FACT:Magus_Archetype_SpellRecall|True
+FACT:Magus_Archetype_SpellCombat|True
+FACT:Magus_Archetype_KnowledgePool|True
+FACT:Magus_Archetype_ImprovedSpellCombat|True
+FACT:Magus_Archetype_GreaterSpellCombat|True
+FACT:Magus_Archetype_GreaterSpellAccess|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Magus Archetype ~ Skirnir],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Magus Archetype ~ Soul Forger.MOD
 FACT:Magus_CF_ImprovedSpellRecall|True
@@ -890,9 +1247,12 @@ FACT:Magus_CF_GreaterSpellAccess|True
 FACT:Magus_CF_KnowledgePool|True
 FACT:Magus_CF_SpellRecall|True
 
+FACT:Magus_Archetype_ImprovedSpellRecall|True
+FACT:Magus_Archetype_GreaterSpellAccess|True
+FACT:Magus_Archetype_KnowledgePool|True
+FACT:Magus_Archetype_SpellRecall|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Magus Archetype ~ Soul Forger],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Monk Archetype ~ Flowing Monk.MOD
-FACT:Monk_CF_BonusFeats|True
 FACT:Monk_CF_BonusFeat2|True
 FACT:Monk_CF_StunningFist|True
 FACT:Monk_CF_PurityOfBody|True
@@ -900,6 +1260,12 @@ FACT:Monk_CF_DiamondBody|True
 FACT:Monk_CF_FastMovement|True
 FACT:Monk_CF_QuiveringPalm|True
 
+FACT:Monk_Archetype_BonusFeats|True
+FACT:Monk_Archetype_StunningFist|True
+FACT:Monk_Archetype_PurityOfBody|True
+FACT:Monk_Archetype_DiamondBody|True
+FACT:Monk_Archetype_FastMovement|True
+FACT:Monk_Archetype_QuiveringPalm|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Monk Archetype ~ Flowing Monk],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Monk Archetype ~ Maneuver Master.MOD
 FACT:Monk_CF_BonusFeats|True
@@ -910,6 +1276,13 @@ FACT:Monk_CF_PurityOfBody|True
 FACT:Monk_CF_QuiveringPalm|True
 FACT:Monk_CF_DiamondBody|True
 
+FACT:Monk_Archetype_BonusFeats|True
+FACT:Monk_Archetype_StillMind|True
+FACT:Monk_Archetype_FlurryOfBlows|True
+FACT:Monk_Archetype_SlowFall|True
+FACT:Monk_Archetype_PurityOfBody|True
+FACT:Monk_Archetype_QuiveringPalm|True
+FACT:Monk_Archetype_DiamondBody|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Monk Archetype ~ Maneuver Master],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Monk Archetype ~ Martial Artist.MOD
 FACT:Monk_CF_Alignment|True
@@ -926,12 +1299,28 @@ FACT:Monk_CF_TongueOfSunAndMoon|True
 FACT:Monk_CF_KiPool|True
 FACT:Monk_CF_AbundantStep|True
 
+FACT:Monk_Archetype_Alignment|True
+FACT:Monk_Archetype_StillMind|True
+FACT:Monk_Archetype_EmptyBody|True
+FACT:Monk_Archetype_SlowFall|True
+FACT:Monk_Archetype_DiamondSoul|True
+FACT:Monk_Archetype_PurityOfBody|True
+FACT:Monk_Archetype_DiamondBody|True
+FACT:Monk_Archetype_PerfectSelf|True
+FACT:Monk_Archetype_WholenessOfBody|True
+FACT:Monk_Archetype_TimelessBody|True
+FACT:Monk_Archetype_TongueOfSunAndMoon|True
+FACT:Monk_Archetype_KiPool|True
+FACT:Monk_Archetype_AbundantStep|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Monk Archetype ~ Martial Artist],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Monk Archetype ~ Master Of Many Styles.MOD
 FACT:Monk_CF_BonusFeats|True
 FACT:Monk_CF_FlurryOfBlows|True
 FACT:Monk_CF_PerfectSelf|True
 
+FACT:Monk_Archetype_BonusFeats|True
+FACT:Monk_Archetype_FlurryOfBlows|True
+FACT:Monk_Archetype_PerfectSelf|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Monk Archetype ~ Master Of Many Styles],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Monk Archetype ~ Sensei.MOD
 FACT:Monk_CF_BonusFeat2|True
@@ -943,10 +1332,17 @@ FACT:Monk_CF_FastMovement|True
 FACT:Monk_CF_ImprovedEvasion|True
 FACT:Monk_CF_Evasion|True
 FACT:Monk_CF_FlurryOfBlows|True
-FACT:Monk_CF_FastMovement|True
 FACT:Monk_CF_ImprovedEvasion|True
 FACT:Monk_CF_Evasion|True
 
+FACT:Monk_Archetype_BonusFeat|True
+FACT:Monk_Archetype_FlurryOfBlows|True
+FACT:Monk_Archetype_FastMovement|True
+FACT:Monk_Archetype_ImprovedEvasion|True
+FACT:Monk_Archetype_Evasion|True
+FACT:Monk_Archetype_FlurryOfBlows|True
+FACT:Monk_Archetype_ImprovedEvasion|True
+FACT:Monk_Archetype_Evasion|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Monk Archetype ~ Sensei],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Monk Archetype ~ Sohei.MOD
 FACT:Monk_CF_BonusFeats|True
@@ -959,6 +1355,15 @@ FACT:Monk_CF_QuiveringPalm|True
 FACT:Monk_CF_TimelessBody|True
 FACT:Monk_CF_TongueOfSunAndMoon|True
 
+FACT:Monk_Archetype_BonusFeats|True
+FACT:Monk_Archetype_StunningFist|True
+FACT:Monk_Archetype_SlowFall|True
+FACT:Monk_Archetype_AbundantStep|True
+FACT:Monk_Archetype_PurityOfBody|True
+FACT:Monk_Archetype_DiamondBody|True
+FACT:Monk_Archetype_QuiveringPalm|True
+FACT:Monk_Archetype_TimelessBody|True
+FACT:Monk_Archetype_TongueOfSunAndMoon|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Monk Archetype ~ Sohei],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Monk Archetype ~ Tetori.MOD
 FACT:Monk_CF_BonusFeats|True
@@ -968,6 +1373,12 @@ FACT:Monk_CF_HighJump|True
 FACT:Monk_CF_EmptyBody|True
 FACT:Monk_CF_DiamondSoul|True
 
+FACT:Monk_Archetype_BonusFeats|True
+FACT:Monk_Archetype_FlurryOfBlows|True
+FACT:Monk_Archetype_SlowFall|True
+FACT:Monk_Archetype_HighJump|True
+FACT:Monk_Archetype_EmptyBody|True
+FACT:Monk_Archetype_DiamondSoul|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Monk Archetype ~ Tetori],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Paladin Archetype ~ Divine Hunter.MOD
 FACT:Paladin_CF_ArmorProficiencyHeavy|True
@@ -978,6 +1389,13 @@ FACT:Paladin_CF_AuraOfResolve|True
 FACT:Paladin_CF_AuraOfFaith|True
 FACT:Paladin_CF_AuraOfJustice|True
 
+FACT:Paladin_Archetype_ArmorProficiencyHeavy|True
+FACT:Paladin_Archetype_AuraOfCourage|True
+FACT:Paladin_Archetype_DivineBond|True
+FACT:Paladin_Archetype_Mercy6|True
+FACT:Paladin_Archetype_AuraOfResolve|True
+FACT:Paladin_Archetype_AuraOfFaith|True
+FACT:Paladin_Archetype_AuraOfJustice|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Paladin Archetype ~ DIVINE HUNTER],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Paladin Archetype ~ Empyreal Knight.MOD
 FACT:Paladin_CF_DivineBond|True
@@ -987,6 +1405,12 @@ FACT:Paladin_CF_LayOnHands|True
 FACT:Paladin_CF_ChannelPositiveEnergy|True
 FACT:Paladin_CF_HolyChampion|True
 
+FACT:Paladin_Archetype_DivineBond|True
+FACT:Paladin_Archetype_DivineGrace|True
+FACT:Paladin_Archetype_Mercy|True
+FACT:Paladin_Archetype_LayOnHands|True
+FACT:Paladin_Archetype_ChannelPositiveEnergy|True
+FACT:Paladin_Archetype_HolyChampion|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Paladin Archetype ~ EMPYREAL KNIGHT],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Paladin Archetype ~ Holy Gun.MOD
 FACT:Paladin_CF_DetectEvil|True
@@ -995,6 +1419,11 @@ FACT:Paladin_CF_DivineBond|True
 FACT:Paladin_CF_ArmorProficiencies|True
 FACT:Paladin_CF_WeaponProficiencies|True
 
+FACT:Paladin_Archetype_DetectEvil|True
+FACT:Paladin_Archetype_SmiteEvil|True
+FACT:Paladin_Archetype_DivineBond|True
+FACT:Paladin_Archetype_ArmorProficiencies|True
+FACT:Paladin_Archetype_WeaponProficiencies|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Paladin Archetype ~ HOLY GUN],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Paladin Archetype ~ Holy Tactician.MOD
 FACT:Paladin_CF_SmiteEvil|True
@@ -1005,6 +1434,13 @@ FACT:Paladin_CF_AuraOfJustice|True
 FACT:Paladin_CF_AuraOfResolve|True
 FACT:Paladin_CF_AuraOfCourage|True
 
+FACT:Paladin_Archetype_SmiteEvil|True
+FACT:Paladin_Archetype_DivineHealth|True
+FACT:Paladin_Archetype_DivineBond|True
+FACT:Paladin_Archetype_HolyChampion|True
+FACT:Paladin_Archetype_AuraOfJustice|True
+FACT:Paladin_Archetype_AuraOfResolve|True
+FACT:Paladin_Archetype_AuraOfCourage|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Paladin Archetype ~ HOLY TACTICIAN],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Paladin Archetype ~ Sacred Shield.MOD
 FACT:Paladin_CF_HolyChampion|True
@@ -1012,6 +1448,10 @@ FACT:Paladin_CF_AuraOfJustice|True
 FACT:Paladin_CF_ChannelPositiveEnergy|True
 FACT:Paladin_CF_SmiteEvil|True
 
+FACT:Paladin_Archetype_HolyChampion|True
+FACT:Paladin_Archetype_AuraOfJustice|True
+FACT:Paladin_Archetype_ChannelPositiveEnergy|True
+FACT:Paladin_Archetype_SmiteEvil|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Paladin Archetype ~ SACRED SHIELD],[!PREFACT:1,ABILITIES,]
 # Antipaladin ONLY
 CATEGORY=Archetype|Paladin Archetype ~ Knight Of The Sepulcher.MOD
@@ -1023,6 +1463,13 @@ FACT:Antipaladin_CF_AuraOfVengeance|True
 FACT:Antipaladin_CF_AuraOfSin|True
 FACT:Antipaladin_CF_UnholyChampion|True
 
+FACT:Antipaladin_Archetype_Cruelty|True
+FACT:Antipaladin_Archetype_SmiteGoodUse10|True
+FACT:Antipaladin_Archetype_AuraOfDespair|True
+FACT:Antipaladin_Archetype_FiendishBoonAbility|True
+FACT:Antipaladin_Archetype_AuraOfVengeance|True
+FACT:Antipaladin_Archetype_AuraOfSin|True
+FACT:Antipaladin_Archetype_UnholyChampion|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Paladin Archetype ~ KNIGHT OF THE SEPULCHER],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Ranger Archetype ~ Battle Scout.MOD
 FACT:Ranger_CF_FavoredEnemy2|True
@@ -1031,6 +1478,11 @@ FACT:Ranger_CF_FavoredEnemy4|True
 FACT:Ranger_CF_MasterHunter|True
 FACT:Ranger_CF_AnimalCompanion|True
 
+FACT:Ranger_Archetype_FavoredEnemy2|True
+FACT:Ranger_Archetype_FavoredEnemy3|True
+FACT:Ranger_Archetype_FavoredEnemy4|True
+FACT:Ranger_Archetype_MasterHunter|True
+FACT:Ranger_Archetype_AnimalCompanion|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Ranger Archetype ~ BATTLE SCOUT],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Ranger Archetype ~ Deep Walker.MOD
 FACT:Ranger_CF_Camouflage|True
@@ -1038,87 +1490,127 @@ FACT:Ranger_CF_WoodlandStride|True
 FACT:Ranger_CF_FavoredTerrain|True
 FACT:Ranger_CF_HideInPlainSight|True
 
+FACT:Ranger_Archetype_Camouflage|True
+FACT:Ranger_Archetype_WoodlandStride|True
+FACT:Ranger_Archetype_FavoredTerrain|True
+FACT:Ranger_Archetype_HideInPlainSight|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Ranger Archetype ~ DEEP WALKER],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Ranger Archetype ~ Falconer.MOD
 FACT:Ranger_CF_CombatStyleFeat6|True
 FACT:Ranger_CF_WildEmpathy|True
 
+FACT:Ranger_Archetype_CombatStyleFeat6|True
+FACT:Ranger_Archetype_WildEmpathy|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Ranger Archetype ~ FALCONER],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Ranger Archetype ~ Trophy Hunter.MOD
 FACT:Ranger_CF_CombatStyle|True
 FACT:Ranger_CF_WildEmpathy|True
 FACT:Ranger_CF_HuntersBond|True
 
+FACT:Ranger_Archetype_CombatStyle|True
+FACT:Ranger_Archetype_WildEmpathy|True
+FACT:Ranger_Archetype_HuntersBond|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Ranger Archetype ~ TROPHY HUNTER],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Ranger Archetype ~ Warden.MOD
 FACT:Ranger_CF_FavoredEnemy|True
 FACT:Ranger_CF_CombatStyle|True
 FACT:Ranger_CF_HuntersBond|True
 
+FACT:Ranger_Archetype_FavoredEnemy|True
+FACT:Ranger_Archetype_CombatStyle|True
+FACT:Ranger_Archetype_HuntersBond|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Ranger Archetype ~ WARDEN],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Ranger Archetype ~ Wild Stalker.MOD
 FACT:Ranger_CF_FavoredEnemy|True
 FACT:Ranger_CF_CombatStyle|True
 FACT:Ranger_CF_HuntersBond|True
 
+FACT:Ranger_Archetype_FavoredEnemy|True
+FACT:Ranger_Archetype_CombatStyle|True
+FACT:Ranger_Archetype_HuntersBond|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Ranger Archetype ~ WILD STALKER],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Rogue Archetype ~ Bandit.MOD
 FACT:Rogue_CF_UncannyDodge|True
 FACT:Rogue_CF_ImprovedUncannyDodge|True
 
+FACT:Rogue_Archetype_UncannyDodge|True
+FACT:Rogue_Archetype_ImprovedUncannyDodge|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Rogue Archetype ~ Bandit],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Rogue Archetype ~ Chameleon.MOD
 FACT:Rogue_CF_TrapFinding|True
 FACT:Rogue_CF_TrapSense|True
 
+FACT:Rogue_Archetype_Trapfinding|True
+FACT:Rogue_Archetype_TrapSense|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Rogue Archetype ~ Chameleon],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Rogue Archetype ~ Charlatan.MOD
 FACT:Rogue_CF_TrapFinding|True
 FACT:Rogue_CF_TrapSense|True
 
+FACT:Rogue_Archetype_Trapfinding|True
+FACT:Rogue_Archetype_TrapSense|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Rogue Archetype ~ Charlatan],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Rogue Archetype ~ Driver.MOD
 FACT:Rogue_CF_Trapfinding|True
 FACT:Rogue_CF_TrapSense|True
 
+FACT:Rogue_Archetype_Trapfinding|True
+FACT:Rogue_Archetype_TrapSense|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Rogue Archetype ~ Driver],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Rogue Archetype ~ Knife Master.MOD
 FACT:Rogue_CF_Trapfinding|True
 FACT:Rogue_CF_TrapSense|True
 
+FACT:Rogue_Archetype_Trapfinding|True
+FACT:Rogue_Archetype_TrapSense|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Rogue Archetype ~ Knife Master],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Rogue Archetype ~ Pirate.MOD
 FACT:Rogue_CF_Trapfinding|True
 FACT:Rogue_CF_TrapSense|True
 FACT:Rogue_CF_Talent2|True
 
+FACT:Rogue_Archetype_Trapfinding|True
+FACT:Rogue_Archetype_TrapSense|True
+FACT:Rogue_Archetype_Talent2|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Rogue Archetype ~ Pirate],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Rogue Archetype ~ Roof Runner.MOD
 FACT:Rogue_CF_Trapfinding|True
 FACT:Rogue_CF_TrapSense|True
 
+FACT:Rogue_Archetype_Trapfinding|True
+FACT:Rogue_Archetype_TrapSense|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Rogue Archetype ~ Roof Runner],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Rogue Archetype ~ Sanctified Rogue.MOD
 FACT:Rogue_CF_UncannyDodge|True
 FACT:Rogue_CF_ImprovedUncannyDodge|True
 
+FACT:Rogue_Archetype_UncannyDodge|True
+FACT:Rogue_Archetype_ImprovedUncannyDodge|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Rogue Archetype ~ Sanctified Rogue],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Rogue Archetype ~ Survivalist.MOD
 FACT:Rogue_CF_Trapfinding|True
 FACT:Rogue_CF_TrapSense|True
 
+FACT:Rogue_Archetype_Trapfinding|True
+FACT:Rogue_Archetype_TrapSense|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Rogue Archetype ~ Survivalist],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Wizard Archetype ~ Arcane Bomber.MOD
 FACT:Wizard_CF_Cantrips|True
 FACT:Wizard_CF_ArcaneBond|True
 FACT:Wizard_CF_ArcaneSchool|True
 
+FACT:Wizard_Archetype_Cantrips|True
+FACT:Wizard_Archetype_ArcaneBond|True
+FACT:Wizard_Archetype_ArcaneSchool|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Wizard Archetype ~ Arcane Bomber],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Wizard Archetype ~ Siege Mage.MOD
 FACT:Wizard_CF_Cantrips|True
 FACT:Wizard_CF_ScribeScroll|True
 FACT:Wizard_CF_ArcaneSchool|True
 
+FACT:Wizard_Archetype_Cantrips|True
+FACT:Wizard_Archetype_ScribeScroll|True
+FACT:Wizard_Archetype_ArcaneSchool|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Wizard Archetype ~ Siege Mage],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Wizard Archetype ~ Spellslinger.MOD
 FACT:Wizard_CF_ArcaneBond|True
@@ -1126,35 +1618,51 @@ FACT:Wizard_CF_ScribeScroll|True
 FACT:Wizard_CF_Cantrips|True
 FACT:Wizard_CF_ArcaneSchool|True
 
+FACT:Wizard_Archetype_ArcaneBond|True
+FACT:Wizard_Archetype_ScribeScroll|True
+FACT:Wizard_Archetype_Cantrips|True
+FACT:Wizard_Archetype_ArcaneSchool|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Wizard Archetype ~ Spellslinger],[!PREFACT:1,ABILITIES,]
 
 ###Block: Ultimate Magic
 CATEGORY=Archetype|Monk Archetype ~ Vow Monk.MOD
 FACT:Monk_CF_StillMind|True
 
+FACT:Monk_Archetype_StillMind|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Monk Archetype ~ Vow Monk],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Alchemist Archetype ~ Chirurgeon.MOD
 FACT:Alchemist_CF_PoisonUse|True
 FACT:Alchemist_CF_PoisonResistance4|True
 FACT:Alchemist_CF_PoisonImmunity|True
 
+FACT:Alchemist_Archetype_PoisonUse|True
+FACT:Alchemist_Archetype_PoisonResistance4|True
+FACT:Alchemist_Archetype_PoisonImmunity|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Alchemist Archetype ~ Chirurgeon],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Alchemist Archetype ~ Clone Master.MOD
 FACT:Alchemist_CF_PoisonResistance6|True
 FACT:Alchemist_CF_PoisonImmunity|True
 FACT:Alchemist_CF_BombReduction|True
 
+FACT:Alchemist_Archetype_PoisonResistance6|True
+FACT:Alchemist_Archetype_PoisonImmunity|True
+FACT:Alchemist_Archetype_BombReduction|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Alchemist Archetype ~ Clone Master],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Alchemist Archetype ~ Internal Alchemist.MOD
 FACT:Alchemist_CF_ThrowAnything|True
 FACT:Alchemist_CF_SwiftAlchemy|True
 FACT:Alchemist_CF_SwiftPoisoning|True
 
+FACT:Alchemist_Archetype_ThrowAnything|True
+FACT:Alchemist_Archetype_SwiftAlchemy|True
+FACT:Alchemist_Archetype_SwiftPoisoning|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Alchemist Archetype ~ Internal Alchemist],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Alchemist Archetype ~ Mindchemist.MOD
 FACT:Alchemist_CF_Mutagen|True
 FACT:Alchemist_CF_PoisonUse|True
 
+FACT:Alchemist_Archetype_Mutagen|True
+FACT:Alchemist_Archetype_PoisonUse|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Alchemist Archetype ~ Mindchemist],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Alchemist Archetype ~ Preservationist.MOD
 FACT:Alchemist_CF_PoisonUse|True
@@ -1164,6 +1672,12 @@ FACT:Alchemist_CF_PoisonImmunity|True
 FACT:Alchemist_CF_PersistentMutagen|True
 FACT:Alchemist_CF_DiscoveryLvl18|True
 
+FACT:Alchemist_Archetype_PoisonUse|True
+FACT:Alchemist_Archetype_PoisonResistance4|True
+FACT:Alchemist_Archetype_PoisonResistance6|True
+FACT:Alchemist_Archetype_PoisonImmunity|True
+FACT:Alchemist_Archetype_PersistentMutagen|True
+FACT:Alchemist_Archetype_DiscoveryLvl18|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Alchemist Archetype ~ Preservationist],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Alchemist Archetype ~ Psychonaut.MOD
 FACT:Alchemist_CF_PoisonResistance4|True
@@ -1173,6 +1687,12 @@ FACT:Alchemist_CF_BombDamageLvl15|True
 FACT:Alchemist_CF_BombDamageLvl17|True
 FACT:Alchemist_CF_BombReduction|True
 
+FACT:Alchemist_Archetype_PoisonResistance4|True
+FACT:Alchemist_Archetype_PoisonResistance6|True
+FACT:Alchemist_Archetype_PoisonImmunity|True
+FACT:Alchemist_Archetype_BombDamageLvl15|True
+FACT:Alchemist_Archetype_BombDamageLvl17|True
+FACT:Alchemist_Archetype_BombReduction|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Alchemist Archetype ~ Psychonaut],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Alchemist Archetype ~ Reanimator.MOD
 FACT:Alchemist_CF_BombDamageLvl7|True
@@ -1180,6 +1700,10 @@ FACT:Alchemist_CF_BombDamageLvl13|True
 FACT:Alchemist_CF_BombDamageLvl15|True
 FACT:Alchemist_CF_BombReduction|True
 
+FACT:Alchemist_Archetype_BombDamageLvl7|True
+FACT:Alchemist_Archetype_BombDamageLvl13|True
+FACT:Alchemist_Archetype_BombDamageLvl15|True
+FACT:Alchemist_Archetype_BombReduction|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Alchemist Archetype ~ Reanimator],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Alchemist Archetype ~ Vivisectionist.MOD
 FACT:Alchemist_CF_Bomb|True
@@ -1195,6 +1719,18 @@ FACT:Alchemist_CF_BombDamageLvl17|True
 FACT:Alchemist_CF_BombDamageLvl19|True
 FACT:Alchemist_CF_BombReduction|True
 
+FACT:Alchemist_Archetype_Bomb|True
+FACT:Alchemist_Archetype_BombDamageLvl1|True
+FACT:Alchemist_Archetype_BombDamageLvl3|True
+FACT:Alchemist_Archetype_BombDamageLvl5|True
+FACT:Alchemist_Archetype_BombDamageLvl7|True
+FACT:Alchemist_Archetype_BombDamageLvl9|True
+FACT:Alchemist_Archetype_BombDamageLvl11|True
+FACT:Alchemist_Archetype_BombDamageLvl13|True
+FACT:Alchemist_Archetype_BombDamageLvl15|True
+FACT:Alchemist_Archetype_BombDamageLvl17|True
+FACT:Alchemist_Archetype_BombDamageLvl19|True
+FACT:Alchemist_Archetype_BombReduction|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Alchemist Archetype ~ Vivisectionist],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Bard Archetype ~ Animal Speaker.MOD
 FACT:Bard_CF_Fascinate|True
@@ -1203,19 +1739,26 @@ FACT:Bard_CF_InspireCompetence|True
 FACT:Bard_CF_Suggestion|True
 FACT:Bard_CF_MassSuggestion|True
 
+FACT:Bard_Archetype_WellVersed|True
+FACT:Bard_Archetype_BardicPerformance|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Bard Archetype ~ Animal Speaker],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Bard Archetype ~ Celebrity.MOD
 FACT:Bard_CF_InspireCourage|True
 FACT:Bard_CF_LoreMaster|True
 FACT:Bard_CF_DirgeOfDoom|True
 
+FACT:Bard_Archetype_LoreMaster|True
+FACT:Bard_Archetype_BardicPerformance|True
+
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Bard Archetype ~ Celebrity],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Bard Archetype ~ Demagogue.MOD
-FACT:Bard_CF_InspireCourage1|True
+FACT:Bard_CF_InspireCourage|True
 FACT:Bard_CF_LoreMaster|True
 FACT:Bard_CF_Suggestion|True
 FACT:Bard_CF_MassSuggestion|True
 
+FACT:Bard_Archetype_LoreMaster|True
+FACT:Bard_Archetype_BardicPerformance|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Bard Archetype ~ Demagogue],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Bard Archetype ~ Dirge Bard.MOD
 FACT:Bard_CF_JackOfAllTrades|True
@@ -1223,6 +1766,10 @@ FACT:Bard_CF_LoreMaster|True
 FACT:Bard_CF_WellVersed|True
 FACT:Bard_CF_VersatilePerformance|True
 
+FACT:Bard_Archetype_JackOfAllTrades|True
+FACT:Bard_Archetype_LoreMaster|True
+FACT:Bard_Archetype_WellVersed|True
+FACT:Bard_Archetype_VersatilePerformance|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Bard Archetype ~ Dirge Bard],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Bard Archetype ~ Geisha.MOD
 FACT:Bard_CF_WeaponProficiencies|True
@@ -1230,17 +1777,24 @@ FACT:Bard_CF_ArmorProficiencies|True
 FACT:Bard_CF_BardicKnowledge|True
 FACT:Bard_CF_ArmoredCasting|True
 
+FACT:Bard_Archetype_WeaponProficiencies|True
+FACT:Bard_Archetype_ArmorProficiencies|True
+FACT:Bard_Archetype_BardicKnowledge|True
+FACT:Bard_Archetype_ArmoredCasting|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Bard Archetype ~ Geisha],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Bard Archetype ~ Songhealer.MOD
 FACT:Bard_CF_VersatilePerformance|True
 FACT:Bard_CF_FrighteningTune|True
 FACT:Bard_CF_DeadlyPerformance|True
 
+FACT:Bard_Archetype_VersatilePerformance|True
+FACT:Bard_Archetype_BardicPerformance|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Bard Archetype ~ Songhealer],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Bard Archetype ~ Sound Striker.MOD
 FACT:Bard_CF_InspireCompetence|True
 FACT:Bard_CF_Suggestion|True
 
+FACT:Bard_Archetype_BardicPerformance|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Bard Archetype ~ Sound Striker],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Cleric Archetype ~ Cloistered Cleric.MOD
 FACT:Cleric_CF_ArmorProficiency|True
@@ -1250,19 +1804,29 @@ FACT:Cleric_CF_SkillRanks|True
 FACT:Cleric_CF_Domains|True
 FACT:Cleric_CF_Spellcasting|True
 
+FACT:Cleric_Archetype_ArmorProficiency|True
+FACT:Cleric_Archetype_WeaponProficiency|True
+FACT:Cleric_Archetype_ClassSkills|True
+FACT:Cleric_Archetype_SkillRanks|True
+FACT:Cleric_Archetype_Domains|True
+FACT:Cleric_Archetype_Spellcasting|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Cleric Archetype ~ Cloistered Cleric],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Cleric Archetype ~ Separatist.MOD
 FACT:Cleric_CF_WeaponProficiency|True
 FACT:Cleric_CF_Domains|True
 
+FACT:Cleric_Archetype_WeaponProficiency|True
+FACT:Cleric_Archetype_Domains|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Cleric Archetype ~ Separatist],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Cleric Archetype ~ Theologian.MOD
 FACT:Cleric_CF_Domains|True
 
+FACT:Cleric_Archetype_Domains|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Cleric Archetype ~ Theologian],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Cleric Archetype ~ Undead Lord.MOD
 FACT:Cleric_CF_Domains|True
 
+FACT:Cleric_Archetype_Domains|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Cleric Archetype ~ Undead Lord],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Druid Archetype ~ Dragon Shaman.MOD
 FACT:Druid_CF_ThousandFaces|True
@@ -1270,6 +1834,10 @@ FACT:Druid_CF_WildShape|True
 FACT:Druid_CF_WildShape8|True
 FACT:Druid_CF_VenomImmunity|True
 
+FACT:Druid_Archetype_ThousandFaces|True
+FACT:Druid_Archetype_WildShape|True
+FACT:Druid_Archetype_WildShape8|True
+FACT:Druid_Archetype_VenomImmunity|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Dragon Shaman],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Druid Archetype ~ Menhir Savant.MOD
 FACT:Druid_CF_NatureSense|True
@@ -1278,6 +1846,11 @@ FACT:Druid_CF_WoodlandStride|True
 FACT:Druid_CF_TracklessStep|True
 FACT:Druid_CF_ThousandFaces|True
 
+FACT:Druid_Archetype_NatureSense|True
+FACT:Druid_Archetype_WildEmpathy|True
+FACT:Druid_Archetype_WoodlandStride|True
+FACT:Druid_Archetype_TracklessStep|True
+FACT:Druid_Archetype_ThousandFaces|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Menhir Savant],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Druid Archetype ~ Mooncaller.MOD
 FACT:Druid_CF_WoodlandStride|True
@@ -1285,11 +1858,17 @@ FACT:Druid_CF_ResistNaturesLure|True
 FACT:Druid_CF_VenomImmunity|True
 FACT:Druid_CF_ThousandFaces|True
 
+FACT:Druid_Archetype_WoodlandStride|True
+FACT:Druid_Archetype_ResistNaturesLure|True
+FACT:Druid_Archetype_VenomImmunity|True
+FACT:Druid_Archetype_ThousandFaces|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Mooncaller],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Druid Archetype ~ Pack Lord.MOD
 FACT:Druid_CF_NatureBond|True
 FACT:Druid_CF_WildShape6|True
 
+FACT:Druid_Archetype_NatureBond|True
+FACT:Druid_Archetype_WildShape6|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Pack Lord],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Druid Archetype ~ Reincarnated Druid.MOD
 FACT:Druid_CF_WoodlandStride|True
@@ -1297,6 +1876,10 @@ FACT:Druid_CF_ResistNaturesLure|True
 FACT:Druid_CF_VenomImmunity|True
 FACT:Druid_CF_TimelessBody|True
 
+FACT:Druid_Archetype_WoodlandStride|True
+FACT:Druid_Archetype_ResistNaturesLure|True
+FACT:Druid_Archetype_VenomImmunity|True
+FACT:Druid_Archetype_TimelessBody|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Reincarnated Druid],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Druid Archetype ~ Saurian Shaman.MOD
 FACT:Druid_CF_ThousandFaces|True
@@ -1304,6 +1887,10 @@ FACT:Druid_CF_WildShape|True
 FACT:Druid_CF_VenomImmunity|True
 FACT:Druid_CF_NatureBond|True
 
+FACT:Druid_Archetype_ThousandFaces|True
+FACT:Druid_Archetype_WildShape|True
+FACT:Druid_Archetype_VenomImmunity|True
+FACT:Druid_Archetype_NatureBond|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Saurian Shaman],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Druid Archetype ~ Shark Shaman.MOD
 FACT:Druid_CF_ThousandFaces|True
@@ -1311,6 +1898,10 @@ FACT:Druid_CF_WildShape|True
 FACT:Druid_CF_VenomImmunity|True
 FACT:Druid_CF_NatureBond|True
 
+FACT:Druid_Archetype_ThousandFaces|True
+FACT:Druid_Archetype_WildShape|True
+FACT:Druid_Archetype_VenomImmunity|True
+FACT:Druid_Archetype_NatureBond|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Shark Shaman],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Druid Archetype ~ Storm Druid.MOD
 FACT:Druid_CF_SpontaneousCasting|True
@@ -1321,6 +1912,13 @@ FACT:Druid_CF_VenomImmunity|True
 FACT:Druid_CF_ThousandFaces|True
 FACT:Druid_CF_NatureBond|True
 
+FACT:Druid_Archetype_SpontaneousCasting|True
+FACT:Druid_Archetype_WoodlandStride|True
+FACT:Druid_Archetype_TracklessStep|True
+FACT:Druid_Archetype_ResistNaturesLure|True
+FACT:Druid_Archetype_VenomImmunity|True
+FACT:Druid_Archetype_ThousandFaces|True
+FACT:Druid_Archetype_NatureBond|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Druid Archetype ~ Storm Druid],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Inquisitor Archetype ~ Exorcist.MOD
 FACT:Inquisitor_CF_SecondJudgment|True
@@ -1328,10 +1926,15 @@ FACT:Inquisitor_CF_ThirdJudgment|True
 FACT:Inquisitor_CF_Slayer|True
 FACT:Inquisitor_CF_TrueJudgment|True
 
+FACT:Inquisitor_Archetype_SecondJudgment|True
+FACT:Inquisitor_Archetype_ThirdJudgment|True
+FACT:Inquisitor_Archetype_Slayer|True
+FACT:Inquisitor_Archetype_TrueJudgment|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Inquisitor Archetype ~ Exorcist],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Inquisitor Archetype ~ Heretic.MOD
 FACT:Inquisitor_CF_MonsterLore|True
 
+FACT:Inquisitor_Archetype_MonsterLore|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Inquisitor Archetype ~ Heretic],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Inquisitor Archetype ~ Infiltrator.MOD
 FACT:Inquisitor_CF_SternGaze|True
@@ -1339,88 +1942,74 @@ FACT:Inquisitor_CF_MonsterLore|True
 FACT:Inquisitor_CF_Track|True
 FACT:Inquisitor_CF_DiscernLies|True
 
+FACT:Inquisitor_Archetype_SternGaze|True
+FACT:Inquisitor_Archetype_MonsterLore|True
+FACT:Inquisitor_Archetype_Track|True
+FACT:Inquisitor_Archetype_DiscernLies|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Inquisitor Archetype ~ Infiltrator],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Inquisitor Archetype ~ Preacher.MOD
 FACT:Inquisitor_CF_SoloTactics|True
 
+FACT:Inquisitor_Archetype_SoloTactics|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Inquisitor Archetype ~ Preacher],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Inquisitor Archetype ~ Sin Eater.MOD
 FACT:Inquisitor_CF_Domain|True
 FACT:Inquisitor_CF_TeamworkFeat6|True
 FACT:Inquisitor_CF_ExploitWeakness|True
 
+FACT:Inquisitor_Archetype_Domain|True
+FACT:Inquisitor_Archetype_TeamworkFeat|True
+FACT:Inquisitor_Archetype_ExploitWeakness|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Inquisitor Archetype ~ Sin Eater],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Magus Archetype ~ Bladebound.MOD
 FACT:Magus_CF_ArcanaLvl3|True
 FACT:Magus_CF_ArcanePool|True
-FACT:Magus_CF_CFArcana|True
+FACT:Magus_CF_Arcana|True
 
+FACT:Magus_Archetype_ArcanaLvl3|True
+FACT:Magus_Archetype_ArcanePool|True
+FACT:Magus_Archetype_Arcana|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Magus Archetype ~ Bladebound],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Magus Archetype ~ Hexcrafter.MOD
 FACT:Magus_CF_SpellRecall|True
 FACT:Magus_CF_Arcana|True
 
+FACT:Magus_Archetype_SpellRecall|True
+FACT:Magus_Archetype_Arcana|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Magus Archetype ~ Hexcrafter],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Magus Archetype ~ Spellblade.MOD
 FACT:Magus_CF_Spellstrike|True
 
+FACT:Magus_Archetype_Spellstrike|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Magus Archetype ~ Spellblade],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Magus Archetype ~ Staff Magus.MOD
 FACT:Magus_CF_WeaponProficiency|True
 FACT:Magus_CF_ArmorProficiency|True
 FACT:Magus_CF_FighterTraining|True
 
+FACT:Magus_Archetype_WeaponProficiency|True
+FACT:Magus_Archetype_ArmorProficiency|True
+FACT:Magus_Archetype_FighterTraining|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Magus Archetype ~ Staff Magus],[!PREFACT:1,ABILITIES,]
-CATEGORY=Archetype|Monk Archetype ~ Qinggong Monk Slow Fall.MOD
-FACT:Monk_CF_SlowFall|True
-
-PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Monk Archetype ~ Qinggong Monk Slow Fall],[!PREFACT:1,ABILITIES,]
-CATEGORY=Archetype|Monk Archetype ~ Qinggong Monk High Jump.MOD
-FACT:Monk_CF_HighJump|True
-
-PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Monk Archetype ~ Qinggong Monk High Jump],[!PREFACT:1,ABILITIES,]
-CATEGORY=Archetype|Monk Archetype ~ Qinggong Monk Wholeness of Body.MOD
-FACT:Monk_CF_WholenessOfBody|True
-
-PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Monk Archetype ~ Qinggong Monk Wholeness of Body],[!PREFACT:1,ABILITIES,]
-CATEGORY=Archetype|Monk Archetype ~ Qinggong Monk Diamond Body.MOD
-FACT:Monk_CF_DiamondBody|True
-
-PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Monk Archetype ~ Qinggong Monk Diamond Body],[!PREFACT:1,ABILITIES,]
-CATEGORY=Archetype|Monk Archetype ~ Qinggong Monk Abundant Step.MOD
-FACT:Monk_CF_AbundantStep|True
-
-PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Monk Archetype ~ Qinggong Monk Abundant Step],[!PREFACT:1,ABILITIES,]
-CATEGORY=Archetype|Monk Archetype ~ Qinggong Monk Diamond Soul.MOD
-FACT:Monk_CF_DiamondSoul|True
-
-PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Monk Archetype ~ Qinggong Monk Diamond Soul],[!PREFACT:1,ABILITIES,]
-CATEGORY=Archetype|Monk Archetype ~ Qinggong Monk Quivering Palm.MOD
-FACT:Monk_CF_QuiveringPalm|True
-
-PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Monk Archetype ~ Qinggong Monk Quivering Palm],[!PREFACT:1,ABILITIES,]
-CATEGORY=Archetype|Monk Archetype ~ Qinggong Monk Timeless Body.MOD
-FACT:Monk_CF_TimelessBody|True
-
-PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Monk Archetype ~ Qinggong Monk Timeless Body],[!PREFACT:1,ABILITIES,]
-CATEGORY=Archetype|Monk Archetype ~ Qinggong Monk Tongue of the Sun and Moon.MOD
-FACT:Monk_CF_TongueOfTheSunAndMoon|True
-
-PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Monk Archetype ~ Qinggong Monk Tongue of the Sun and Moon],[!PREFACT:1,ABILITIES,]
-CATEGORY=Archetype|Monk Archetype ~ Qinggong Monk Empty Body.MOD
-FACT:Monk_CF_EmptyBody|True
-
-PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Monk Archetype ~ Qinggong Monk Empty Body],[!PREFACT:1,ABILITIES,]
-CATEGORY=Archetype|Monk Archetype ~ Qinggong Monk Perfect Self.MOD
-FACT:Monk_CF_PerfectSelf|True
-
-PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Monk Archetype ~ Qinggong Monk Perfect Self],[!PREFACT:1,ABILITIES,]
+CATEGORY=Archetype|Monk Archetype ~ Qinggong Monk Slow Fall.MOD	FACT:Monk_CF_SlowFall|True	FACT:Monk_Archetype_SlowFall|True	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Monk Archetype ~ Qinggong Monk Slow Fall],[!PREFACT:1,ABILITIES,Monk_Archetype_SlowFall=True]
+CATEGORY=Archetype|Monk Archetype ~ Qinggong Monk High Jump.MOD	FACT:Monk_CF_HighJump|True	FACT:Monk_Archetype_HighJump|True	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Monk Archetype ~ Qinggong Monk High Jump],[!PREFACT:1,ABILITIES,Monk_Archetype_HighJump=True]
+CATEGORY=Archetype|Monk Archetype ~ Qinggong Monk Wholeness of Body.MOD	FACT:Monk_CF_WholenessOfBody|True	FACT:Monk_Archetype_WholenessOfBody|True	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Monk Archetype ~ Qinggong Monk Wholeness of Body],[!PREFACT:1,ABILITIES,Monk_Archetype_WholenessOfBody=True]
+CATEGORY=Archetype|Monk Archetype ~ Qinggong Monk Diamond Body.MOD	FACT:Monk_CF_DiamondBody|True	FACT:Monk_Archetype_DiamondBody|True	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Monk Archetype ~ Qinggong Monk Diamond Body],[!PREFACT:1,ABILITIES,Monk_Archetype_DiamondBody=True]
+CATEGORY=Archetype|Monk Archetype ~ Qinggong Monk Abundant Step.MOD	FACT:Monk_CF_AbundantStep|True	FACT:Monk_Archetype_AbundantStep|True	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Monk Archetype ~ Qinggong Monk Abundant Step],[!PREFACT:1,ABILITIES,Monk_Archetype_AbundantStep=True]
+CATEGORY=Archetype|Monk Archetype ~ Qinggong Monk Diamond Soul.MOD	FACT:Monk_CF_DiamondSoul|True	FACT:Monk_Archetype_DiamondSoul|True	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Monk Archetype ~ Qinggong Monk Diamond Soul],[!PREFACT:1,ABILITIES,Monk_Archetype_DiamondSoul=True]
+CATEGORY=Archetype|Monk Archetype ~ Qinggong Monk Quivering Palm.MOD	FACT:Monk_CF_QuiveringPalm|True	FACT:Monk_Archetype_QuiveringPalm|True	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Monk Archetype ~ Qinggong Monk Quivering Palm],[!PREFACT:1,ABILITIES,Monk_Archetype_QuiveringPalm=True]
+CATEGORY=Archetype|Monk Archetype ~ Qinggong Monk Timeless Body.MOD	FACT:Monk_CF_TimelessBody|True	FACT:Monk_Archetype_TimelessBody|True	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Monk Archetype ~ Qinggong Monk Timeless Body],[!PREFACT:1,ABILITIES,Monk_Archetype_TimelessBody=True]
+CATEGORY=Archetype|Monk Archetype ~ Qinggong Monk Tongue of the Sun and Moon.MOD	FACT:Monk_CF_TongueOfTheSunAndMoon|True		FACT:Monk_Archetype_TongueOfTheSunAndMoon|True	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Monk Archetype ~ Qinggong Monk Tongue of the Sun and Moon],[!PREFACT:1,ABILITIES,Monk_Archetype_TongueOfTheSunAndMoon=True]
+CATEGORY=Archetype|Monk Archetype ~ Qinggong Monk Empty Body.MOD	FACT:Monk_CF_EmptyBody|True	FACT:Monk_Archetype_EmptyBody|True	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Monk Archetype ~ Qinggong Monk Empty Body],[!PREFACT:1,ABILITIES,Monk_Archetype_EmptyBody=True]
+CATEGORY=Archetype|Monk Archetype ~ Qinggong Monk Perfect Self.MOD	FACT:Monk_CF_PerfectSelf|True		FACT:Monk_Archetype_PerfectSelf|True	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Monk Archetype ~ Qinggong Monk Perfect Self],[!PREFACT:1,ABILITIES,Monk_Archetype_PerfectSelf=True]
 CATEGORY=Archetype|Oracle Archetype ~ Dual-Cursed Oracle.MOD
 FACT:Oracle_CF_MysterySkills|True
 FACT:Oracle_CF_MysterySpell2|True
 FACT:Oracle_CF_MysterySpell4|True
 FACT:Oracle_CF_MysterySpell6|True
 
+FACT:Oracle_Archetype_MysterySkills|True
+FACT:Oracle_Archetype_MysterySpell|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Oracle Archetype ~ Dual-Cursed Oracle],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Oracle Archetype ~ Enlightened Philosopher.MOD
 FACT:Oracle_CF_MysterySkills|True
@@ -1435,6 +2024,9 @@ FACT:Oracle_CF_MysterySpell18|True
 FACT:Oracle_CF_Revelation7|True
 FACT:Oracle_CF_FinalRevelation|True
 
+FACT:Oracle_Archetype_MysterySpell|True
+FACT:Oracle_Archetype_Revelation|True
+FACT:Oracle_Archetype_FinalRevelation|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Oracle Archetype ~ Enlightened Philosopher],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Oracle Archetype ~ Planar Oracle.MOD
 FACT:Oracle_CF_MysterySpell2|True
@@ -1449,6 +2041,9 @@ FACT:Oracle_CF_MysterySpell18|True
 FACT:Oracle_CF_Revelation3|True
 FACT:Oracle_CF_FinalRevelation|True
 
+FACT:Oracle_Archetype_MysterySpell|True
+FACT:Oracle_Archetype_Revelation|True
+FACT:Oracle_Archetype_FinalRevelation|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Oracle Archetype ~ Planar Oracle],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Oracle Archetype ~ Possessed Oracle.MOD
 FACT:Oracle_CF_MysterySpell2|True
@@ -1460,6 +2055,8 @@ FACT:Oracle_CF_MysterySpell12|True
 FACT:Oracle_CF_MysterySpell16|True
 FACT:Oracle_CF_Revelation1|True
 
+FACT:Oracle_Archetype_MysterySpell|True
+FACT:Oracle_Archetype_Revelation|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Oracle Archetype ~ Possessed Oracle],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Oracle Archetype ~ Seer.MOD
 FACT:Oracle_CF_MysterySpell4|True
@@ -1473,6 +2070,8 @@ FACT:Oracle_CF_MysterySpell18|True
 FACT:Oracle_CF_Revelation1|True
 FACT:Oracle_CF_Revelation3|True
 
+FACT:Oracle_Archetype_MysterySpell|True
+FACT:Oracle_Archetype_Revelation|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Oracle Archetype ~ Seer],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Oracle Archetype ~ Stargazer.MOD
 FACT:Oracle_CF_MysterySkills|True
@@ -1484,22 +2083,32 @@ FACT:Oracle_CF_MysterySpell18|True
 FACT:Oracle_CF_Revelation1|True
 FACT:Oracle_CF_Revelation7|True
 
+FACT:Oracle_Archetype_MysterySkills|True
+FACT:Oracle_Archetype_MysterySpell|True
+FACT:Oracle_Archetype_Revelation|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Oracle Archetype ~ Stargazer],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Paladin Archetype ~ Oath against Corruption.MOD
 FACT:Paladin_CF_AuraOfCourage|True
 FACT:Paladin_CF_AuraOfJustice|True
 FACT:Paladin_CF_HolyChampion|True
 
+FACT:Paladin_Archetype_AuraOfCourage|True
+FACT:Paladin_Archetype_AuraOfJustice|True
+FACT:Paladin_Archetype_HolyChampion|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Paladin Archetype ~ Oath against Corruption],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Paladin Archetype ~ Oath against Fiends.MOD
 FACT:Paladin_CF_AuraOfResolve|True
 FACT:Paladin_CF_Mercy9|True
 
+FACT:Paladin_Archetype_AuraOfResolve|True
+FACT:Paladin_Archetype_Mercy|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Paladin Archetype ~ Oath against Fiends],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Paladin Archetype ~ Oath against Savagery.MOD
 FACT:Paladin_CF_DivineGrace|True
 FACT:Paladin_CF_AuraOfJustice|True
 
+FACT:Paladin_Archetype_DivineGrace|True
+FACT:Paladin_Archetype_AuraOfJustice|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Paladin Archetype ~ Oath against Savagery],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Paladin Archetype ~ Oath against Undeath.MOD
 FACT:Paladin_CF_DetectEvil|True
@@ -1508,31 +2117,45 @@ FACT:Paladin_CF_Mercy9|True
 FACT:Paladin_CF_AuraOfResolve|True
 FACT:Paladin_CF_AuraOfJustice|True
 
+FACT:Paladin_Archetype_DetectEvil|True
+FACT:Paladin_Archetype_Mercy|True
+FACT:Paladin_Archetype_AuraOfResolve|True
+FACT:Paladin_Archetype_AuraOfJustice|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Paladin Archetype ~ Oath against Undeath],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Paladin Archetype ~ Oath against the Wyrm.MOD
 FACT:Paladin_CF_ChannelPositiveEnergy|True
 FACT:Paladin_CF_DivineBond|True
 FACT:Paladin_CF_HolyChampion|True
 
+FACT:Paladin_Archetype_ChannelPositiveEnergy|True
+FACT:Paladin_Archetype_DivineBond|True
+FACT:Paladin_Archetype_HolyChampion|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Paladin Archetype ~ Oath against the Wyrm],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Paladin Archetype ~ Oath of Charity.MOD
 FACT:Paladin_CF_LayOnHands|True
 FACT:Paladin_CF_DivineBond|True
 
+FACT:Paladin_Archetype_LayOnHands|True
+FACT:Paladin_Archetype_DivineBond|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Paladin Archetype ~ Oath of Charity],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Paladin Archetype ~ Oath of Chastity.MOD
 FACT:Paladin_CF_DivineGrace|True
 FACT:Paladin_CF_AuraOfResolve|True
 
+FACT:Paladin_Archetype_DivineGrace|True
+FACT:Paladin_Archetype_AuraOfResolve|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Paladin Archetype ~ Oath of Chastity],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Paladin Archetype ~ Oath of Loyalty.MOD
 FACT:Paladin_CF_SmiteEvil|True
 
+FACT:Paladin_Archetype_SmiteEvil|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Paladin Archetype ~ Oath of Loyalty],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Paladin Archetype ~ Oath of Vengeance.MOD
 FACT:Paladin_CF_ChannelPositiveEnergy|True
 FACT:Paladin_CF_AuraOfJustice|True
 
+FACT:Paladin_Archetype_ChannelPositiveEnergy|True
+FACT:Paladin_Archetype_AuraOfJustice|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Paladin Archetype ~ Oath of Vengeance],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Ranger Archetype ~ Trapper.MOD
 	FACT:Ranger_CF_Spells|True
@@ -2148,6 +2771,10 @@ FACT:Slayer_CF_Talent4|True
 FACT:Slayer_CF_Talent10|True
 FACT:Slayer_CF_Stalker|True
 
+FACT:Slayer_Archetype_WeaponProficiency|True
+FACT:Slayer_Archetype_ArmorProficiencies|True
+FACT:Slayer_Archetype_Talent|True
+FACT:Slayer_Archetype_Stalker|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Slayer Archetype ~ Stygian Slayer],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Slayer Archetype ~ Vanguard.MOD
 FACT:Slayer_CF_Track|True
@@ -2155,6 +2782,9 @@ FACT:Slayer_CF_Talent2|True
 FACT:Slayer_CF_Talent4|True
 FACT:Slayer_CF_Stalker|True
 
+FACT:Slayer_Archetype_Track|True
+FACT:Slayer_Archetype_Talent|True
+FACT:Slayer_Archetype_Stalker|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Slayer Archetype ~ Vanguard],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Sorcerer Archetype ~ Eldritch Scrapper.MOD
 FACT:Sorcerer_CF_BloodlinePowers|True
@@ -2162,6 +2792,10 @@ FACT:Sorcerer_CF_BloodlinePowerLvl1|True
 FACT:Sorcerer_CF_BloodlinePowerLvl9|True
 FACT:Sorcerer_CF_BloodlinePowerLvl15|True
 
+FACT:Sorcerer_Archetype_BloodlinePowers|True
+FACT:Sorcerer_Archetype_BloodlinePowerLvl1|True
+FACT:Sorcerer_Archetype_BloodlinePowerLvl9|True
+FACT:Sorcerer_Archetype_BloodlinePowerLvl15|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Sorcerer Archetype ~ Eldritch Scrapper],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Sorcerer Archetype ~ Mongrel Mage.MOD
 FACT:Sorcerer_CF_BloodlineFeats|True
@@ -2169,6 +2803,10 @@ FACT:Sorcerer_CF_Bloodline|True
 FACT:Sorcerer_CF_BloodlinePowers|True
 FACT:Sorcerer_CF_BloodlineSpells|True
 
+FACT:Sorcerer_Archetype_BloodlineFeats|True
+FACT:Sorcerer_Archetype_Bloodline|True
+FACT:Sorcerer_Archetype_BloodlinePowers|True
+FACT:Sorcerer_Archetype_BloodlineSpells|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Sorcerer Archetype ~ Mongrel Mage],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Swashbuckler Archetype ~ Daring Infiltrator.MOD
 FACT:Swashbuckler_CF_ClassSkills|True
@@ -2178,6 +2816,12 @@ FACT:Swashbuckler_CF_SwashbucklerInitiativeDeed|True
 FACT:Swashbuckler_CF_MenacingSwordplayDeed|True
 FACT:Swashbuckler_CF_BleedingWoundDeed|True
 
+FACT:Swashbuckler_Archetype_ClassSkills|True
+FACT:Swashbuckler_Archetype_BonusFeats|True
+FACT:Swashbuckler_Archetype_CharmedLife|True
+FACT:Swashbuckler_Archetype_SwashbucklerInitiativeDeed|True
+FACT:Swashbuckler_Archetype_MenacingSwordplayDeed|True
+FACT:Swashbuckler_Archetype_BleedingWoundDeed|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Swashbuckler Archetype ~ Daring Infiltrator],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Swashbuckler Archetype ~ Flying Blade.MOD
 FACT:Swashbuckler_CF_Panache|True
@@ -2189,6 +2833,14 @@ FACT:Swashbuckler_CF_PerfectThrustDeed|True
 FACT:Swashbuckler_CF_SwashbucklerWeaponTraining|True
 FACT:Swashbuckler_CF_SwashbucklerWeaponMastery|True
 
+FACT:Swashbuckler_Archetype_Panache|True
+FACT:Swashbuckler_Archetype_DodgingPanacheDeed|True
+FACT:Swashbuckler_Archetype_MenacingSwordplayDeed|True
+FACT:Swashbuckler_Archetype_TargetedStrikeDeed|True
+FACT:Swashbuckler_Archetype_BleedingWoundDeed|True
+FACT:Swashbuckler_Archetype_PerfectThrustDeed|True
+FACT:Swashbuckler_Archetype_SwashbucklerWeaponTraining|True
+FACT:Swashbuckler_Archetype_SwashbucklerWeaponMastery|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Swashbuckler Archetype ~ Flying Blade],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Swashbuckler Archetype ~ Inspired Blade.MOD
 FACT:Swashbuckler_CF_BleedingWoundDeed|True
@@ -2198,6 +2850,12 @@ FACT:Swashbuckler_CF_Deeds|True
 FACT:Swashbuckler_CF_WeaponTraining|True
 FACT:Swashbuckler_CF_WeaponMastery|True
 
+FACT:Swashbuckler_Archetype_BleedingWoundDeed|True
+FACT:Swashbuckler_Archetype_Panache|True
+FACT:Swashbuckler_Archetype_Finesse|True
+FACT:Swashbuckler_Archetype_Deeds|True
+FACT:Swashbuckler_Archetype_WeaponTraining|True
+FACT:Swashbuckler_Archetype_WeaponMastery|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Swashbuckler Archetype ~ Inspired Blade],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Swashbuckler Archetype ~ Mouser.MOD
 FACT:Swashbuckler_CF_BleedingWoundDeed|True
@@ -2206,12 +2864,20 @@ FACT:Swashbuckler_CF_OpportuneParryDeed|True
 FACT:Swashbuckler_CF_RiposteDeed|True
 FACT:Swashbuckler_CF_MenacingSwordplayDeed|True
 
+FACT:Swashbuckler_Archetype_BleedingWoundDeed|True
+FACT:Swashbuckler_Archetype_TargetedStrikeDeed|True
+FACT:Swashbuckler_Archetype_OpportuneParryDeed|True
+FACT:Swashbuckler_Archetype_RiposteDeed|True
+FACT:Swashbuckler_Archetype_MenacingSwordplayDeed|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Swashbuckler Archetype ~ Mouser],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Swashbuckler Archetype ~ Musketeer.MOD
 FACT:Swashbuckler_CF_Finesse|True
 FACT:Swashbuckler_CF_WeaponProficiencies|True
-DeedDodgingPanache|True
+FACT:Swashbuckler_CF_DeedDodgingPanache|True
 
+FACT:Swashbuckler_Archetype_Finesse|True
+FACT:Swashbuckler_Archetype_WeaponProficiencies|True
+FACT:Swashbuckler_Archetype_DeedDodgingPanache|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Swashbuckler Archetype ~ Musketeer],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Swashbuckler Archetype ~ Mysterious Avenger.MOD
 FACT:Swashbuckler_CF_ClassSkills|True
@@ -2220,12 +2886,16 @@ FACT:Swashbuckler_CF_Finesse|True
 FACT:Swashbuckler_CF_BonusFeat4|True
 FACT:Swashbuckler_CF_Nimble|True
 FACT:Swashbuckler_CF_WeaponTraining|True
-FACT:Swashbuckler_CF_BonusFeat|True
 
+FACT:Swashbuckler_Archetype_ClassSkills|True
+FACT:Swashbuckler_Archetype_Proficiency|True
+FACT:Swashbuckler_Archetype_Finesse|True
+FACT:Swashbuckler_Archetype_Nimble|True
+FACT:Swashbuckler_Archetype_WeaponTraining|True
+FACT:Swashbuckler_Archetype_BonusFeat|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Swashbuckler Archetype ~ Mysterious Avenger],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Swashbuckler Archetype ~ Picaroon.MOD
 FACT:Swashbuckler_CF_WeaponProficiency|True
-FACT:Swashbuckler_CF_Panache|True
 FACT:Swashbuckler_CF_Panache|True
 FACT:Swashbuckler_CF_DeedOpportuneParry|True
 FACT:Swashbuckler_CF_DeedRiposte|True
@@ -2234,12 +2904,22 @@ FACT:Swashbuckler_CF_DeedSuperiorFeint|True
 FACT:Swashbuckler_CF_DeedBleedingWound|True
 FACT:Swashbuckler_CF_Finesse|True
 
+FACT:Swashbuckler_Archetype_WeaponProficiency|True
+FACT:Swashbuckler_Archetype_Panache|True
+FACT:Swashbuckler_Archetype_DeedOpportuneParry|True
+FACT:Swashbuckler_Archetype_DeedRiposte|True
+FACT:Swashbuckler_Archetype_DeedKipUp|True
+FACT:Swashbuckler_Archetype_DeedSuperiorFeint|True
+FACT:Swashbuckler_Archetype_DeedBleedingWound|True
+FACT:Swashbuckler_Archetype_Finesse|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Swashbuckler Archetype ~ Picaroon],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Warpriest Archetype ~ Champion of the Faith.MOD
 FACT:Warpriest_CF_SacredWeapon|True
 FACT:Warpriest_CF_BonusFeat3|True
 FACT:Warpriest_CF_ChannelEnergy|True
-FACT:Warpriest_CF_BonusFeat|True
+FACT:Warpriest_Archetype_BonusFeat|True
+FACT:Warpriest_Archetype_SacredWeapon|True
+FACT:Warpriest_Archetype_ChannelEnergy|True
 
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Warpriest Archetype ~ Champion of the Faith],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Warpriest Archetype ~ Cult Leader.MOD
@@ -2251,33 +2931,41 @@ FACT:Warpriest_CF_BonusFeat3|True
 FACT:Warpriest_CF_BonusFeat9|True
 FACT:Warpriest_CF_BonusFeat12|True
 FACT:Warpriest_CF_BonusFeat15|True
-FACT:Warpriest_CF_BonusFeat|True
+FACT:Warpriest_Archetype_BonusFeat|True
+FACT:Warpriest_Archetype_ClassSkills|True
+FACT:Warpriest_Archetype_Proficiency|True
+FACT:Warpriest_Archetype_ChannelEnergy|True
+FACT:Warpriest_Archetype_FocusWeapon|True
 
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Warpriest Archetype ~ Cult Leader],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Warpriest Archetype ~ Disenchanter.MOD
 FACT:Warpriest_CF_BonusFeat6|True
 FACT:Warpriest_CF_ChannelEnergy|True
-FACT:Warpriest_CF_BonusFeat|True
-FACT:Warpriest_CF_BonusFeat|True
+FACT:Warpriest_Archetype_BonusFeat|True
+FACT:Warpriest_Archetype_ChannelEnergy|True
 
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Warpriest Archetype ~ Disenchanter],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Warpriest Archetype ~ Divine Commander.MOD
-FACT:Warpriest_CF_Blessings|True
 FACT:Warpriest_CF_Blessings|True
 FACT:Warpriest_CF_BonusFeat3|True
 FACT:Warpriest_CF_BonusFeat6|True
 FACT:Warpriest_CF_BonusFeat12|True
 FACT:Warpriest_CF_BonusFeat15|True
 
+FACT:Warpriest_Archetype_Blessings|True
+FACT:Warpriest_Archetype_BonusFeat|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Warpriest Archetype ~ Divine Commander],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Warpriest Archetype ~ Forgepriest.MOD
-FACT:Warpriest_CF_Blessings|True
 FACT:Warpriest_CF_Blessings|True
 FACT:Warpriest_CF_BonusFeat|True
 FACT:Warpriest_CF_BonusFeat3|True
 FACT:Warpriest_CF_BonusFeat6|True
 FACT:Warpriest_CF_ChannelEnergy|True
 
+FACT:Warpriest_Archetype_Blessings|True
+FACT:Warpriest_Archetype_BonusFeat|True
+FACT:Warpriest_Archetype_BonusFeat|True
+FACT:Warpriest_Archetype_ChannelEnergy|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Warpriest Archetype ~ Forgepriest],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Warpriest Archetype ~ Sacred Fist.MOD
 FACT:Warpriest_CF_ClassSkills|True
@@ -2291,17 +2979,21 @@ FACT:Warpriest_CF_BonusFeat12|True
 FACT:Warpriest_CF_BonusFeat18|True
 FACT:Warpriest_CF_SacredArmor|True
 
+FACT:Warpriest_Archetype_ClassSkills|True
+FACT:Warpriest_Archetype_Proficiency|True
+FACT:Warpriest_Archetype_SacredWeapon|True
+FACT:Warpriest_Archetype_FocusWeapon|True
+FACT:Warpriest_Archetype_BonusFeat|True
+FACT:Warpriest_Archetype_SacredArmor|True
 PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Warpriest Archetype ~ Sacred Fist],[!PREFACT:1,ABILITIES,]
 CATEGORY=Archetype|Witch Archetype ~ Hex Channeler.MOD
-FACT:Witch_CF_Hex2|True
-FACT:Witch_CF_Hex|True
-
-PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Witch Archetype ~ Hex Channeler],[!PREFACT:1,ABILITIES,]
+	FACT:Witch_CF_Hex2|True
+	FACT:Witch_Archetype_Hex|True
+	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Witch Archetype ~ Hex Channeler],[!PREFACT:1,ABILITIES,Witch_Archetype_Hex=True]
 CATEGORY=Archetype|Witch Archetype ~ Mountain Witch.MOD
-FACT:Witch_CF_Hex2|True
-FACT:Witch_CF_Hex|True
-
-PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Witch Archetype ~ Mountain Witch],[!PREFACT:1,ABILITIES,]
+	FACT:Witch_CF_Hex2|True
+	FACT:Witch_Archetype_Hex|True
+	PREMULT:1,[PREABILITY:1,CATEGORY=Archetype,Witch Archetype ~ Mountain Witch],[!PREFACT:1,ABILITIES,Witch_Archetype_Hex=True]
 CATEGORY=Archetype|Wizard Archetype ~ Exploiter Wizard.MOD
 	FACT:Wizard_CF_ArcaneBond|True
 	FACT:Wizard_CF_ArcaneSchool|True
